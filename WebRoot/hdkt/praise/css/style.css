@@ -1,0 +1,460 @@
+.layui-layer-title {
+    font-size: 16px;
+}
+
+.layui-layer-btn {
+    text-align: center;
+}
+
+.layui-layer-btn a {
+    margin: auto 15px;
+    padding: 0 25px;
+}
+
+.layui-layer-btn .layui-layer-btn0, .layui-layer-btn .layui-layer-btn1, .layui-layer-btn .layui-layer-btn2 {
+    border-color: #1E9FFF;
+    background-color: #1E9FFF;
+    color: #fff;
+}
+
+.layui-layer {
+    border: 1px solid #d8d8d8;
+}
+
+.layui-layer-page .layui-layer-content {
+    overflow: hidden !important;
+}
+
+#praise_Component_v1 * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 28px
+}
+
+#praise_Component_v1.all-name ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#praise_Component_v1 .pbottom-bm ul li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#praise_Component_v1 {
+    overflow: hidden;
+    background: #fff;
+}
+
+#praise_Component_v1 ul.stuList {
+    overflow: auto;
+    overflow-x: hidden;
+    height: 330px;
+    width: 100.1%;
+    position: relative;
+}
+
+/*max-height:330px; */
+#praise_Component_v1 ul.stuList li {
+    width: 9.75%;
+    float: left;
+    display: inline;
+}
+
+#praise_Component_v1 ul.stuList li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 10px 3px;
+    border: 1px solid #fff;
+    margin: -1px -1px -1px 0;
+    background-color: #00bdc7;
+    color: #fff;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+    font-size: 16px
+}
+
+#praise_Component_v1 ul.stuList li a span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    vertical-align: middle;
+    display: none;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc63370b, endColorstr=#cc63370b);
+}
+
+#praise_Component_v1 ul.stuList li a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#praise_Component_v1 ul.stuList li a.bgcGreen, span.bgcGreen {
+    background-color: #4fc334;
+    color: #fff;
+}
+
+#praise_Component_v1 ul.stuList li a.bgcBlue, span.bgcBlue {
+    background-color: #00bdc7;
+    color: #fff;
+}
+
+#praise_Component_v1 ul.stuList li a.bgcRed {
+    background-color: #cb2e33;
+    color: #fff;
+}
+
+#praise_Component_v1 ul.stuList li a.bgcOrange {
+    background-color: rgb(255, 141, 0);
+    color: #fff;
+}
+
+#praise_Component_v1 ul.stuList li a.none {
+    cursor: no-drop;
+}
+
+#praise_Component_v1 ul.stuList li a.bgcYellow, span.bgcYellow {
+    background-color: #daaf03;
+    color: #fff;
+}
+
+#praise_Component_v1 ul.stuList li a.bgcGray {
+    cursor: not-allowed;
+}
+
+#praise_Component_v1 .boxCon {
+    padding: 15px;
+}
+
+/*------����------*/
+#praise_Component_v1 .all-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#praise_Component_v1 .all-name li {
+    float: left;
+    display: block;
+    line-height: 35px;
+    width: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#praise_Component_v1 .all-name li a {
+    display: block;
+}
+
+#praise_Component_v1 .all-cur, .all-cur a {
+    border-bottom: 1px solid #00bdc7;
+    color: #00bdc7;
+}
+
+#praise_Component_v1 .all-select {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #1E9FFF;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+#praise_Component_v1 .praise-bottom {
+    background: #fff;
+}
+
+#praise_Component_v1 .pbottom-top {
+    background: #efefef;
+    height: 35px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}
+
+#praise_Component_v1 .pbottom-top span {
+    line-height: 35px;
+    padding: 0 25px;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+
+#praise_Component_v1 .pb-cur {
+    background: #fff;
+    border-bottom: 2px solid #1E9FFF;
+}
+
+#praise_Component_v1 .pbottom-bm {
+    padding: 25px 10px 10px;
+}
+
+#praise_Component_v1 .pbottom-bm li {
+    float: left;
+    padding: 0 5px;
+}
+
+#praise_Component_v1 .pbottom-bm li img {
+    margin: auto;
+    width: 95px;
+    height: 90px;
+}
+
+#praise_Component_v1 .pbottom-i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: url(../images/out.png) no-repeat;
+}
+
+#praise_Component_v1-by {
+    background: url(../images/03.png) no-repeat center top;
+    height: 440px;
+    position: relative;
+}
+
+#praise_Component_v1-by .pname-img {
+    position: relative;
+    padding-top: 95px;
+    height: 90px;
+    text-align: center;
+    clear: both;
+}
+
+#praise_Component_v1-by .pname-p {
+    text-align: left;
+    margin-top: 60px;
+    padding: 15px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+#praise_Component_v1-by .pname-p span {
+    padding: 0 0 0 85px;
+    font-size: 22px;
+    display: inline-block;
+    color: #555;
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#praise_Component_v1-by .pname-p .allStudent {
+    text-align: center;
+    width: 570px;
+    padding: 0 0 0 0px;
+    font-size: 22px;
+    display: inline-block;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#praise_Component_v1-by .pname-d {
+    text-align: center;
+    color: #fff;
+    font: normal 26px/40px "Microsoft YeHei";
+    margin-top: 25px;
+}
+
+#praise_Component_v1-by .pname-one {
+    text-align: center;
+    margin-top: 60px;
+    padding: 15px;
+    height: 100px;
+}
+
+#praise_Component_v1-by .pname-one span {
+    font: normal 35px/80px "Microsoft YeHei";
+}
+
+#praise_Component_v1-by .pname-one img {
+    vertical-align: top;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+#praise_Component_v1-by .comments {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+/*--------�������а�-------*/
+#praise_Component_v1 .prank {
+    padding: 15px;
+    *position: relative;
+    *left: 0;
+    *top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 510px;
+}
+
+#praise_Component_v1 .prank-top {
+    width: auto;
+    margin: 10px auto;
+}
+
+#praise_Component_v1 .prank-top li {
+    width: 30%;
+    display: block;
+    float: left;
+    margin: auto 1%;
+    padding-top: 10px;
+}
+
+#praise_Component_v1 .prank-top li h2 {
+    height: 32px;
+    line-height: 32px;
+    border-radius: 16px;
+    display: block;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    width: 115px;
+}
+
+#praise_Component_v1 .prank-top li h2 i {
+    background: url(../images/jifen.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#praise_Component_v1 .prank-top li h2 i.TwoBt {
+    background-position: 0 -20px;
+}
+
+#praise_Component_v1 .redBg {
+    background-color: #e04817;
+}
+
+#praise_Component_v1 .lvvBg {
+    background-color: #3cbfae;
+}
+
+#praise_Component_v1 .blueBg {
+    background-color: #2fa8dc;
+}
+
+#praise_Component_v1 .li-box {
+    width: 80%;
+    padding: 0 10px;
+    margin: auto;
+    background: #efefef;
+    height: 60px;
+    border: 1px solid #ddd;
+    font: normal 22px/60px "";
+}
+
+#praise_Component_v1 .li-box img {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#praise_Component_v1 .li-box span {
+    margin-left: 20px;
+    float: left;
+}
+
+#praise_Component_v1 .li-box a {
+    width: 40px;
+    height: 40px;
+    float: right;
+    display: inline-block;
+}
+
+#praise_Component_v1 .li-box a img {
+    width: 100%;
+}
+
+#praise_Component_v1 .li-box b {
+    float: right;
+    color: red;
+}
+
+#praise_Component_v1 .stu-table {
+    font-size: 13px;
+    width: 97%;
+    clear: both;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fff;
+    font-family: Microsoft YaHei UI;
+    position: relative;
+    z-inddex: 0;
+}
+
+#praise_Component_v1 .stu-table td {
+    color: #555;
+    position: relative;
+    border: 1px solid #ddd;
+    line-height: 35px;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 0;
+    width: 12.5%;
+    overflow: hidden;
+}
+
+#praise_Component_v1 .stu-table th {
+    height: 35px;
+    line-height: 35px;
+    background: #e0f1fd;
+    color: #555;
+    cursor: default;
+    padding: 0 6px;
+    font-weight: normal;
+}
+
+#praise_Component_v1 .stu-i {
+    position: absolute;
+    right: 3px;
+    top: 0px;
+    color: red;
+    height: 30px;
+    width: 30px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 22px;
+    font-style: normal;
+}

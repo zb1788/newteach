@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Microsoft YaHei;
+    background: #e7e7e7;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+    overflow: auto;
+    clear: both;
+    height: 0;
+}
+
+.w980 {
+    width: 980px;
+    clear: both;
+    margin: 0 auto;
+}
+
+<!--
+------------------- >
+.section {
+    border: 1px solid #dbdbdb;
+    height: 500px;
+    display: block;
+    background: #fff;
+}
+
+.section h1 {
+    font: bold 20px/50px Microsoft YaHei;
+    height: 50px;
+    padding-left: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.section h1 span {
+    color: #F03;
+}
+
+.explain {
+    padding: 15px;
+}
+
+.explain h2 {
+    font: normal 18px/40px Microsoft YaHei;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.table {
+    clear: both;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.table td {
+    white-space: normal;
+    word-break: break-all;
+    border-bottom: 1px solid #f6f6f6;
+    height: 50px;
+    line-height: 35px;
+    overflow: hidden;
+    padding: 2px 6px;
+    font: normal 15px/50px Microsoft YaHei;
+}
+
+.tit2 {
+    height: 40px;
+    line-height: 40px;
+    background: #e0f1fd;
+    color: #555;
+    cursor: default;
+    padding: 0 6px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd {
+    font-size: 14px !important;
+    line-height: 25px !important;
+    height: 44px;
+    overflow: hidden;
+    width: 331px;
+    display: inline-block;
+    text-align: left;
+}
+
+.wdd {
+    font-size: 14px !important;
+    line-height: 25px !important;
+    height: 44px;
+    width: 265px;
+    text-align: left;
+}
+
+a.blue, a.blue:visited {
+    color: #168acc;
+    text-decoration: none;
+}
+
+.teach {
+    width: 100%;
+}
+
+.teach span {
+    margin: 15px 0px 5px 0;
+    display: block;
+    float: left;
+    padding: 5px 20px;
+    background: rgba(0, 204, 255, 1);
+    width: 29%;
+    text-align: center;
+    cursor: pointer;
+    font: bold 18px/35px Microsoft YaHei;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 8px;
+}
+
+span.cur, .teach span:hover {
+    background: rgba(102, 204, 102, 1);
+}

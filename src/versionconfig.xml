@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<version>
+    <!-- 下载插件版本号 -->
+    <vcomdownlaod>1.0.1.6</vcomdownlaod>
+    <!-- 优教通播放器版本号 -->
+    <vcomplayer>1.0.0.8</vcomplayer>
+    <!-- 授课直播播放器版本号 -->
+    <vcomplayerline>1.0.0.3</vcomplayerline>
+    <!-- ftp上传控件版本号 -->
+    <ftpupload>1.0.0.2</ftpupload>
+    <!-- 授课客户端版本号 -->
+    <client>1.00.16</client>
+</version>

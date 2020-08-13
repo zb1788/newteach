@@ -1,0 +1,110 @@
+.toplogo {
+    background-image: url(yidonghei/logo.png);
+}
+
+.xuan {
+    width: 96px;
+    background: url(yidonghei/images/new/xuanke.png) no-repeat;
+    margin-top: -1px;
+}
+
+.welcome {
+    background: url(yidonghei/images/new/welcome.png) right no-repeat;
+}
+
+.iconSet {
+    margin: 24px 30px 0 10px;
+}
+
+.iconSet a {
+    height: 56px;
+    width: 56px;
+    background: url(yidonghei/images/new/iconSet.png) no-repeat;
+}
+
+/*���ؽ�ʦ�ļ��з���*/
+.subMenu .yunMenuType {
+    display: none;
+}
+
+/* ����ɫ*/
+body {
+    filter: none;
+    background: url("yidonghei/images/new/bg.png") repeat-x #02356a;
+}
+
+/* ȥ������ͼƬ*/
+.containers {
+    background-image: none;
+}
+
+.header {
+    height: 103px;
+    margin-bottom: 0px;
+    background: url("yidonghei/images/new/headerBg.png");
+}
+
+.nav {
+    margin-top: 0px;
+    height: 67px;
+}
+
+.nav {
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    background: url("yidonghei/images/new/navBg.png") repeat-x;
+}
+
+.nav-div {
+    height: 67px;
+}
+
+.nav-list li a {
+    height: 67px;
+    line-height: 67px;
+    border-bottom: 0px;
+    font-size: 18px;
+}
+
+ul#menu li a.sel, ul#menu li a.sel:hover {
+    filter: none;
+    background: url("yidonghei/images/new/navActiveBg.png") repeat-x;
+}
+
+/*����Ӧ�ñ���ɫ*/
+ul.menuMore li a {
+    background: #2e91db;
+    /*
+    background-color: none;
+    */
+    filter: none;
+    border-bottom: 2px solid #024e97;
+    border-top: 1px solid #c5e5f2;
+}
+
+/*�����˵�*/
+.topMenu {
+    background: url("yidonghei/images/new/topMenuBg.png") repeat-x;
+}
+
+.topMenu ul li a:hover {
+    background-color: transparent
+}
+
+.topMenu ul li.on a, .topMenu ul li.on a:hover {
+    color: #fff;
+    background-color: #013f75;
+}
+
+.closeBtn {
+    float: right;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.closeBtn a.close {
+    background: url(yidonghei/images/new/btn.png) no-repeat;
+}
+
+.closeBtn a.close:hover {
+    background: url(yidonghei/images/new/btn.png) no-repeat;
+}

@@ -1,0 +1,515 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    color: #333;
+    height: 100%;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
+/*���float*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+    overflow: auto;
+    clear: both;
+    height: 0;
+}
+
+/*����Ϊ����style�����������ʽ���У��ڲ�Ӱ�������£�����ɾ����Ŀǰֻ�ڱ��ز���*/
+
+/*��ʦ�ļ���*/
+.fold {
+    margin: 10px;
+    padding: 10px;
+}
+
+.fold .posNow {
+    border-bottom: 1px dashed #CCC;
+    padding: 5px 0;
+    height: 15px;
+    color: #666;
+    background: url(../images/icons.gif) left top no-repeat;
+    text-indent: 2em;
+}
+
+#nav {
+    margin: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+#nav h4 {
+    padding: 5px 0;
+}
+
+#nav h4 a {
+    height: 24px;
+    line-height: 24px;
+    width: 100px;
+    display: block;
+    font-size: 14px;
+    color: #06C;
+    background: url(../images/icons.gif) 0 -35px no-repeat;
+    padding-left: 20px;
+}
+
+#nav h4 span {
+    float: right;
+}
+
+#nav h4 p {
+    height: 24px;
+    line-height: 24px;
+    width: 120px;
+    display: block;
+    font-size: 14px;
+    color: #06C;
+    background: url(../images/icons.gif) 0 -61px no-repeat;
+    padding-left: 25px;
+}
+
+ul.navTop {
+}
+
+ul.navTop li {
+    width: 74px;
+    float: left;
+}
+
+ul.navTop li button {
+    width: 72px;
+    height: 26px;
+    background: url(../images/button.gif) left top no-repeat;
+}
+
+ul.navTop .li-small {
+    width: 55px;
+    float: left;
+}
+
+ul.navTop li .button-small {
+    width: 52px;
+    height: 26px;
+    background: url(../images/button-2.gif) left top no-repeat;
+}
+
+ul.folderList {
+    zoom: 1;
+    overflow: auto;
+    margin: 5px 20px 5px;
+}
+
+ul.folderList li {
+    width: 100px;
+    height: 123px;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 5px;
+    float: left;
+    text-align: center;
+    color: #333;
+}
+
+ul.folderList li p {
+    width: 95px;
+    height: 65px;
+    padding-top: 15px;
+    line-height: 95px;
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+ul.folderList li p:hover {
+    border: 1px solid #ccc;
+}
+
+ul.folderList li .onmove {
+    border: 1px solid #0E93C5;
+}
+
+ul.folderList li .oninto {
+    border: 1px solid red;
+}
+
+ul.folderList li p.sel {
+    background: url(../images/select.gif) no-repeat;
+    border: 1px solid #ccc;
+}
+
+
+/*��������*/
+#mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    _position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 50;
+    background: #c6c6c6;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.floatDiv {
+    width: 650px;
+    border: 4px solid #ddd;
+    position: fixed;
+    _position: absolute;
+    left: 50%;
+    margin-left: -325px;
+    top: 5%;
+    background: #FFF;
+    z-index: 99;
+}
+
+.floatDiv .title {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    background: url(../images/titleBgLine.gif) repeat-x;
+    padding-left: 10px;
+    _padding-top: 5px;
+}
+
+.floatDiv .title img {
+    float: right;
+    margin: 7px 12px 0 0;
+    vertical-align: middle;
+}
+
+.floatDiv .title select {
+    border: 1px solid #aaa;
+    padding: 1px 2px;
+}
+
+.floatDiv .title input {
+    padding: 1px 2px;
+    background: url(../images/cfou.jpg) no-repeat;
+    width: 84px;
+    height: 25px;
+}
+
+.box {
+    height: 202px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.marTB {
+    margin: 10px 0;
+}
+
+.marTB.xieyi {
+    margin-bottom: 0;
+}
+
+.upload {
+}
+
+.upload input {
+    border: 1px solid #CCC;
+    padding: 5px;
+    font-size: 14px;
+    color: #666;
+    vertical-align: middle;
+}
+
+.upload tr.line td {
+    height: 30px;
+    border-bottom: 1px dashed #CCC;
+    color: #0b95c0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upload tr.linet td {
+    border-top: 1px dashed #CCC;
+    color: #0b95c0;
+}
+
+.upload tr.gray {
+    background: #efefef;
+}
+
+.upload td {
+    padding: 3px;
+}
+
+.upload td.kd1 {
+    width: 100px;
+}
+
+.upload td.kd2 {
+    width: 81px;
+    text-align: center;
+}
+
+.upload td.kd3 {
+    width: 150px;
+}
+
+.upload td.kd4 {
+    width: 250px;
+    padding: 2px;
+}
+
+.upload td.add button {
+    width: 90px;
+    height: 29px;
+    background: url(../images/button.gif) left -30px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.upload td .button2 {
+    width: 84px;
+    height: 25px;
+    background: url(../images/cfou.jpg);
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.upload td.href a {
+    border-bottom: 1px solid #0b95c0;
+    color: #0b95c0;
+}
+
+.upload td p {
+    text-indent: 5px;
+    color: #333;
+    margin: 3px 0;
+}
+
+.upload td p span {
+    color: #0b95c0;
+}
+
+.upload td.up {
+    text-align: center;
+}
+
+.upload td.up button {
+    width: 76px;
+    height: 26px;
+    background: url(../images/button.gif) left top no-repeat;
+    margin: 3px;
+}
+
+.upload td.up button.blue {
+    width: 76px;
+    height: 26px;
+    background: url(../images/button.gif) right top no-repeat;
+    margin: 3px;
+}
+
+.upload td input.radio {
+    margin-left: 5px;
+    border: none;
+    vertical-align: middle;
+}
+
+.xieyi {
+    line-height: 24px;
+}
+
+.xieyi p {
+    color: #555;
+    padding: 5px 15px;
+}
+
+/*�Ҽ��˵�*/
+#rightKey {
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 229px;
+}
+
+.keyTop {
+    background: url(../images/rightKeyBg1.png) top;
+    height: 4px;
+}
+
+.keyBottom {
+    background: url(../images/rightKeyBg1.png) bottom;
+    height: 8px;
+}
+
+ul.rightKey {
+    width: 223px;
+    padding: 1px 5px 1px 1px;
+    background: url(../images/rightKeyBg2.png) repeat-y;
+}
+
+ul.rightKey li {
+    width: 219px;
+    height: 26px;
+    line-height: 26px;
+    color: #333;
+    cursor: default;
+    margin: 0 2px;
+}
+
+ul.rightKey li:hover {
+    background: url(../images/rightKeySel.png) top;
+    color: #000;
+}
+
+ul.rightKey li.gray {
+    color: #777;
+}
+
+ul.rightKey li.gray:hover {
+    background: url(../images/rightKeySel.png) bottom;
+    color: #777;
+}
+
+ul.rightKey li img {
+    vertical-align: middle;
+    margin: 0 10px 0 4px;
+}
+
+ul.rightKey span {
+    display: block;
+    background: url(../images/rightKeyBg3.png) 28px 0 no-repeat;
+    height: 2px;
+    line-height: 2px;
+}
+
+
+/*�Ƶ�*/
+.floatMoveDiv {
+    width: 350px;
+    border: 4px solid #ddd;
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    background: #FFF;
+    z-index: 99;
+}
+
+.floatMoveDiv .title {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    background: url(../images/titleBgLine.gif) repeat-x;
+    padding-left: 10px;
+    _padding-top: 5px;
+}
+
+.floatMoveDiv .title img {
+    float: right;
+    margin: 7px 12px 0 0;
+    vertical-align: middle;
+}
+
+.floatMoveDiv .title select {
+    border: 1px solid #aaa;
+    padding: 1px 2px;
+}
+
+/*����������Ƽ�*/
+input {
+    vertical-align: middle;
+}
+
+.tj_area {
+    background: #f2fbff;
+    border-top: 1px solid #c1e0ed;
+    display: none;
+}
+
+.tj_area h6 {
+    font: bold 12px/40px ����;
+    text-indent: 10px;
+    background: #d5eef9;
+    position: relative;
+    z-index: 988;
+    height: 40px;
+}
+
+.tj_con {
+    margin: 10px;
+}
+
+.tj_area h3 {
+    display: block;
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+    line-height: 26px;
+    padding-right: 5px;
+    width: 40px;
+}
+
+.tj_area ul {
+    margin: 0;
+    float: right;
+    width: 570px;
+    line-height: 26px;
+}
+
+.tj_area li {
+    width: 135px;
+    float: left;
+    display: block;
+    margin-right: 5px;
+    _display: inline;
+    height: 26px;
+    overflow: hidden;
+}
+
+.btn_ar {
+    clear: both;
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 70px;
+    background: #e3f2f9;
+}
+
+a.btn9, a.btn9:visited {
+    border: 1px solid #cecece;
+    background: url(../images/btn_bg.gif) repeat-x;
+    height: 26px;
+    display: inline-block;
+    font: bold 12px/26px ����;
+    color: #333;
+    padding: 0 15px;
+    letter-spacing: 2px;
+}
+
+a.btn9:hover {
+    border: 1px solid #84bcd6;
+    background-image: url(../images/btn_bg_hover.gif);
+}

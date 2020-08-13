@@ -1,0 +1,633 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <TITLE>基础教育班班通工程</TITLE>
+    <METAHTTP-EQUIV
+    ="Pragma"CONTENT="no-cache">
+    <METAHTTP-EQUIV
+    ="Cache-Control"CONTENT="no-cache">
+    <METAHTTP-EQUIV
+    ="Expires"CONTENT="0">
+    <META content="text/html; charset=gb2312" http-equiv=Content-Type>
+    <META content=ie=7 http-equiv=x-ua-compatible>
+    <!--根据屏幕尺寸显示原则样式表start-->
+    <link href='css/style.css' rel='stylesheet' type='text/css'/>
+    <link href="css/login.css" rel="stylesheet" type="text/css"/>
+    <!--根据屏幕尺寸显示原则样式表end-->
+    <script type="text/javascript" src="../../js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="../../../js/config_pls.jsp"></script>
+    <script type="text/javascript">
+        var tProtocol = window.location.protocol + "//";
+        if (transferProtocol_web && typeof (transferProtocol_web) != "undefined") {
+            if (tProtocol != transferProtocol_web) {
+                //是否重定向？
+            }
+        }
+    </script>
+    <!-- 效验工具 -->
+    <script type="text/javascript" src="../../js/validate_common.js"></script>
+    <!-- ajax工具 -->
+    <script type="text/javascript" src="../../js/ajax_common.js"></script>
+    <!-- 常用工具 -->
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- 用户工具  -->
+    <script type="text/javascript" src="js/footTools.js"></script>
+    <!-- 授课参数-->
+    <script type="text/javascript" src="../../js/teach_constant.js"></script>
+    <!-- 快捷键 -->
+    <script type="text/javascript" src="../../js/simple_hotkey.js"></script>
+    <!-- 模板设置  -->
+    <script type="text/javascript" src="../../js/template.js"></script>
+    <!-- mac工具 -->
+    <script type="text/javascript" src="../../js/mac_util.js"></script>
+    <!-- 登陆工具 -->
+    <script type="text/javascript" src="../../js/login.js"></script>
+    <!-- md5加密 -->
+    <script type="text/javascript" src="../../js/js_md5.js"></script>
+    <!-- rsa加密 -->
+    <script type="text/javascript" src="../../js/security.js"></script>
+    <!-- 系统设置  -->
+    <script type="text/javascript" src="../../js/system_config.js"></script>
+    <!-- 教学工具  -->
+    <script type="text/javascript" src="../../js/teach_tools.js"></script>
+    <!-- 授课IP设置  -->
+    <script type="text/javascript" src="../../js/teachUrlConfig.js"></script>
+    <!-- U盘资源  -->
+    <script type="text/javascript" src="../../js/usb_show.js"></script>
+    <script type="text/javascript" src="../../js/pwdConfig.js"></script>
+    <!-- 密码配置  -->
+    <script type="text/javascript" src="../../js/artDialog.js"></script>
+    <script type="text/javascript" src="../../js/iframeTools.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+    <script type="text/javascript" src="js/makewxqrcode.js"></script>
+    <META name=GENERATOR content="MSHTML 8.00.7600.16671">
+    <style type="text/css">
+        html {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        body {
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .versionButton {
+            display: inline-block;
+            width: 90px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background: url(./images/spirit.png) 0 -80px no-repeat;
+            color: #fff;
+        }
+    </style>
+</head>
+<!-- 手机wifi检测插件 -->
+<OBJECT ID="JudgeWirelessNetworkCard1" WIDTH=0 HEIGHT=0
+        CLASSID="CLSID:1BD21F72-BE55-4C04-B6DE-7C2B9F1E7724">
+</OBJECT>
+
+<body scroll=no onDragStart="return false;">
+
+<!-- 引入插件  start-->
+<OBJECT id=ocx
+        codeBase="http://125.46.92.81:80/officdown.cab#version=1,0,1,4"
+        classid=CLSID:B02201C9-1789-4FF0-B95F-C1A03D8B6B99 width=0 height=0>
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="10583">
+    <PARAM NAME="_ExtentY" VALUE="10583">
+    <PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+<div style="display: none">
+    <OBJECT
+            CLASSID="clsid：B02201C9-1789-4FF0-B95F-C1A03D8B6B99"
+            ID=VCOMPlayer
+            Name=VCOMPlayer
+            WIDTH=0
+            HEIGHT=0>
+    </OBJECT>
+    <OBJECT id=mac_ocx name=mac_ocx classid=clsid:3bde69c2-9ec0-4636-868c-9e400a44e765></OBJECT>
+    <OBJECT ID="ipActiveX" WIDTH=350 HEIGHT=50
+            CLASSID="CLSID:f7f17642-76a0-4824-97dc-bb623582c998">
+        <PARAM NAME="_Version" VALUE="65536">
+        <PARAM NAME="_ExtentX" VALUE="2646">
+        <PARAM NAME="_ExtentY" VALUE="1323">
+        <PARAM NAME="_StockProps" VALUE="0">
+    </OBJECT>
+
+    <OBJECT CLASSID="clsid:B4490376-83CE-4dc9-ADD4-05287993DDE6" ID=usb_ocx Name=usb_ocx WIDTH=250 HEIGHT=250></OBJECT>
+
+    <OBJECT id="LessionOcx" align="CENTER" WIDTH=0 HEIGHT=0
+            classid="clsid:5DB31BE4-17CE-4767-9A15-7AFC513D1D2D"></OBJECT>
+    <br>
+
+</div>
+<script language=Javascript for=ocx event=OnXmlFinish(strXML)>
+    //alert(strXML); //alert("获取xml失败");
+    /*
+
+                    if(_common.getCurrServerPath()==_common.getCurrServerPath2())
+                    {
+                        document.getElementById("waithtml2").innerHTML='';
+                        _loginObj.error('请检查您的网络或授课IP及windows时间设置！',1);
+                    }else{
+                        _loginObj.getHistoryUser("school");
+                    }
+    */
+
+</script>
+<script language=Javascript for=ocx event=OnProccess(pos,speed)>
+    if (filedowntype == 1) {
+        updatePos2(pos, speed);
+    } else if (filedowntype == 2) {
+        updatePos(pos, speed);
+    } else if (filedowntype == 3) {
+        updatePos3(pos, speed);
+    }
+</script>
+<script language=Javascript for=ocx event=OnStateChange(state,errMsg)>
+    updateState(state, errMsg);
+    var ocxversion = "1.0.1.4";
+</script>
+<!-- 引入插件 end-->
+<!-- 标题图片begin -->
+<!-- 系统升级提示层 start
+<div class="tan k_da" id='updiv' >
+  <p > 授课端正在升级中！</p>
+   <div class="b"><input class="but del" id='up_login' type="button" value="继续登录" style="margin-right:15px">
+        <input class="but" type="button" value="关闭客户端"></div>
+</div>
+<div class="beij" id='upmask' style="display:none;"> </div>
+-->
+<div class="tan k_da" id='updiv'>
+    <p id='upcontent'></p>
+    <div class="b"><input class="but del" id='up_login' type="button" value="继续登录" onclick="_loginObj.hideUpDiv()"
+                          style="margin-right:15px;">
+        <input class="but" type="button" value="关闭客户端" onclick="_common.exitSystem()"></div>
+</div>
+<div class="beij" id='upmask' style="display:none;"></div>
+<!-- 系统升级提示层 end -->
+<div class="picBox">
+    <DIV id=versionshow class="versionshow"></DIV>
+    <img class="logo" src="images/logo.png"/>
+    <img class="pic" src="images/pic.png"/>
+    <img class="bg" src="images/pic_bg.jpg"/>
+</div>
+<div class="shadow"></div>
+<!-- 登陆面板 -->
+<div class="loginBox" id="loginBox">
+    <div class="formCon" id="formCon">
+				     <span class="id">
+					     <input onkeydown="
+										  if(event.keyCode==9||event.keyCode==13||event.keyCode==39) {return false;}
+						             "
+                                onkeyup="if(event.keyCode==37||event.keyCode==8) {_loginObj.setActInputObj(this);}
+									 if(event.keyCode>=49 && event.keyCode<=105 ) {_loginObj.setActInputObj(this);}
+									 "
+                                id=login.username
+                                onclick=_loginObj.setActInputObj(this);
+                                type="text"
+                                placeholder="用户名"
+                                maxlength="20"
+                                size="20"
+                         />
+					 </span>
+        <span class="pw">
+					     <input type="password"
+                                placeholder="密码"
+                                style="display:none"
+                                onkeydown="if(event.keyCode==13) _loginObj.login();
+									 if(event.keyCode==37) {return false;}"
+                                id=login.pwd
+                                onkeyup="
+									 if(event.keyCode==37) {_loginObj.setLeftArrowState();}
+									 if(event.keyCode==39||event.keyCode==8) {_loginObj.setActInputObj(this);}
+									 if(event.keyCode>=49 && event.keyCode<=105 ) {_loginObj.setActInputObj(this);}
+									 "
+                                onclick=_loginObj.setActInputObj(this);
+                                maxLength=20
+                         />
+							 <input type="text"
+                                    id="login.pwd2"
+                                    placeholder="密码"
+                                    maxLength=20
+                             />
+					 </span>
+        <span class="sm">
+					     <a href="#" id=login.login onclick="_loginObj.login();">登录</a>
+					 </span>
+        <span class="sel"><input id=rememberFlag type="checkbox" value=""/>记住密码</span>
+        <DIV id="waithtml2"><IMG src="images/a_send.gif"> 正在获取用户，请稍后....</DIV>
+        <!-- 软键盘数字键-->
+        <div id=login.tip style="display:block"></div>
+    </div>
+    <!-- 软键盘begin -->
+    <div class="keyboard" id=keyboard></div>
+</div>
+<!-- 历史记录begin -->
+<div class="user" id=userName></div>
+<DIV style="POSITION: absolute; DISPLAY: none; TOP: 0px; CURSOR: hand; LEFT: 0px"
+     id=del_icon onclick=" _loginObj.delHistoryUser();">
+    <IMG id=del_icon_img src="images/del.gif">
+</DIV>
+<!-- 系统工具begin -->
+<div class="tools" id="tools">
+    <!--
+     按钮列表 由js写入此处
+     <a href="#" id="teachToolConfigs.name4" ><span class="t1"></span></a>
+     -->
+</div>
+<div id="qrcode">
+    <div class="wei" id="wei" style="position: absolute; top:-200px; left:-200px; ">
+
+        <div id="qrcodeCanvas" style=" display:block; margin:0; ">
+        </div>
+        <h6 style=" text-align:center; font-weight:normal; color:#666; margin-top:-15px; ">扫一扫，快速登录</h6>
+        <div class="msg-err" style="display:block;">
+            <h6>二维码已失效</h6>
+            <a href="javascript:;" onclick="freshQrcode()" class="refresh J_QRCodeRefresh">请点击刷新</a>
+        </div>
+    </div>
+
+</div>
+<!-- 版权信息begin -->
+<div class="copyright" id="copyright"><img src="images/copyright.png"/></div>
+<!--遮罩 begin -->
+<DIV style="display: none" id=mask></DIV>
+<!--下载 begin -->
+<DIV style="display: none" id=upload class=floatDiv2>
+    <DIV class=title>
+        <A href="javascript:tocloseupload();"></A>
+        <H5 id=__openfile>正在加载资源，请稍候....</H5>
+    </DIV>
+    <SPAN class=clearfix></SPAN>
+    <DIV id=uploadlist></DIV>
+</DIV>
+<!-- 关闭按钮begin -->
+<DIV id="closePC" class="closePC close" onclick=_common.exitSystem();></DIV>
+<!-- 遮罩begin -->
+<DIV style="display:none;text-align:center;" id=maskAllall>
+    <DIV id="waithtml" style=" position:absolute;left:45%;top:45%;"><IMG src="images/extanim32.gif">正在加载数据，请稍后....</DIV>
+</DIV>
+<!-- 遮罩begin -->
+<DIV style="DISPLAY: none" id=maskAll></DIV>
+
+<!--本机资源-开始-->
+<DIV id=localResDiv class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick="document.getElementById('localResDiv').style.display='none'"></DIV>
+        <DIV class=divTitle>
+            本机资源！
+        </DIV>
+        <DIV class=divContent>
+            <H3>
+                请您选择打开的资源
+            </H3>
+            <UL class=divButton>
+                <LI id="btnCss" class=space4>
+                    <A href="javascript:_usbObj.openUSBWindow(540,280);">U盘资源</A>
+                </LI>
+                <li>
+                    <a href="javascript:_teachTools.openExe(_teachToolConfigObj.dzjc);">畅言资源</a>
+                </li>
+            </UL>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--本机资源-结束-->
+
+<!--系统设置-开始-->
+<DIV id=sysConfig.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_sysConfg.closeWindow();></DIV>
+        <DIV class=divTitle>系统设置！</DIV>
+        <DIV class=divContent>
+            <H3>请您进行系统设置</H3>
+            <div style="color:#ba0505;font-weight:bold;font-size:14px;">
+                Windows&nbsp;XP操作系统教学机需要关闭写保护后，才能正常保存，否则重启教学机后配置更改将丢失。
+            </div>
+            <ul class=divButton>
+                <li id="btnCss" class=space4><A id=SysConfig.teachipbutton
+                                                href="javascript:new TeachUrlConfigObj().openWindow(3);">授课ip设置</A></li>
+                <li><a id="SysConfig.teachToolConfigButton"
+                       href="javascript:_teachToolConfigObj.openWindow(3);">工具配置</a></li>
+            </ul>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--系统设置-结束-->
+<!--密码 窗口 begin-->
+<DIV style="DISPLAY: none" id=sysConfig.passwdWindow class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_sysConfg.closePasswdWindow();></DIV>
+        <DIV class=divTitle>密码验证！</DIV>
+        <DIV class=divContent>
+            <H3>密码验证</H3>
+            <DL class=ipSet>
+                <DT>请输入密码：</DT>
+                <DD><INPUT id=sysConfig.passwd maxLength=10 type=password></DD>
+            </DL>
+            <SPAN class=clearfix></SPAN>
+        </DIV>
+        <SPAN class=clearfix></SPAN>
+        <!-- 提示信息 -->
+        <DIV id=sysConfig.tip></DIV>
+        <DIV class="page marR2">
+            <DIV class=pageNext><A href="javascript:_sysConfg.closePasswdWindow();">返 回</A></DIV>
+            <DIV class=pageNext><A href="javascript:_sysConfg.validatePasswd();">确 定</A></DIV>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--密码 窗口 end-->
+<!--  教学工具 begin -->
+<form action="" name="ipform">
+    <div id="teachToolConfig.configWindow" class="floatDiv" style="display: none;">
+        <div class="divTop">
+            <div class="divClose" onclick="_teachToolConfigObj.closeWindow();"></div>
+            <div class="divTitle">教学工具配置</div>
+            <div class="divContent">
+                <dl class="ipSet" id="teachToolConfig.inputPanel">
+
+                    <dt id="teachToolConfig_input0_name">
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);" />
+                    </dt>
+                    <dd id="teachToolConfig_input0_path">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a href="javascript:_teachToolConfigObj.selectFolder(0); ">选 择</a>
+                    </dd>
+
+                    <dt id="teachToolConfig_input1_name">
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);"/>
+                    </dt>
+                    <dd id="teachToolConfig_input1_path">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a href="javascript:_teachToolConfigObj.selectFolder(1); ">选 择</a>
+                    </dd>
+
+                    <dt id="teachToolConfig_input2_name">
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);" />
+                    </dt>
+                    <dd id="teachToolConfig_input2_path">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a href="javascript:_teachToolConfigObj.selectFolder(2); ">选 择</a>
+                    </dd>
+                    <dt id="teachToolConfig_input3_name">
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);" />
+                    </dt>
+                    <dd id="teachToolConfig_input3_path">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a href="javascript:_teachToolConfigObj.selectFolder(3); ">选 择</a>
+                    </dd>
+
+                    <dt id="teachToolConfig_input4_name">
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);" />
+                    </dt>
+                    <dd id="teachToolConfig_input4_path">
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a href="javascript:_teachToolConfigObj.selectFolder(4); ">选 择</a>
+                    </dd>
+                </dl>
+                <span class="clearfix"></span>
+            </div>
+            <span class="clearfix"></span>
+            <!-- 提示信息 -->
+            <div class="" id="teachToolConfig.tip"></div>
+            <div class="page marR2">
+                <div class="pageNext"><a href="javascript:_teachToolConfigObj.closeWindow();">返 回</a></div>
+                <div class="pageNext"><a href="#" onclick="_teachToolConfigObj.updateObjectByPage();"
+                                         id="teachToolConfig.confirm">确 定</a></div>
+            </div>
+        </div>
+        <div class="divBottom"></div>
+    </div>
+</form>
+<div id="net.teachUrlConfigWindow" class="floatDiv" style="display: none; ">
+    <div class="divTop">
+        <div class="divClose" onclick="new TeachUrlConfigObj().closeWindow();"></div>
+        <div class="divTitle">授课IP设置！</div>
+        <div class="divContent pr">
+            <h3 style="height:53px;">
+                <ul class="divButton selBtn aBtn">
+                    <li id="btnCss">
+                        <a id="SysConfig.teachToolConfigButton"
+                           href=" javascript:new AddressConfigObj().openWindow();">
+                            <p style="font-size:18px;">网络选择</p>
+                        </a>
+                    </li>
+                    <li id="btnCss">
+                        <a id="SysConfig.teachToolConfigButton"
+                           href=" javascript:new TeachUrlConfigObj().openWindow1();">
+                            <p style="font-size:18px;">手工输入</p>
+                        </a>
+                    </li>
+                </ul>
+            </h3>
+            <dl class="ipSet2">
+                <dt>校级授课地址：</dt>
+                <dd><input type="text" id="school_url" style="width: 360px;"/></dd>
+                <dt>市级授课地址：</dt>
+                <dd><input type="text" id="city_url" value="" style="width: 360px;"/></dd>
+                <dt></dt>
+            </dl>
+            <!--
+            <ul class="divButton selBtn">
+                <li id="btnCss" >
+                    <a id="SysConfig.teachToolConfigButton" href=" javascript:new AddressConfigObj().openWindow();"><p style="font-size:18px;">选择授课地址</p></a>
+                </li>
+            </ul>
+            -->
+            <span class="clearfix"></span>
+            <div class="tipsInfo">示例如下：http://plsxx.czbanbantong.com/teach 或 https://plsxx.czbanbantong.com/teach<br/>
+            </div>
+            <br/>
+            <!-- 提示信息 -->
+            <div class="" id="teachUrlConfig.tip"></div>
+            <div class="page marR2">
+                <div class="pageNext"><a href="javascript:new TeachUrlConfigObj().closeWindow();">返 回</a></div>
+                <div class="pageNext"><a onclick="_tuConfig.setURL();" href="#">确 定</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="divBottom" style="height: 50px;"></div>
+</div>
+<div id="Address_ConfigWindow" class="floatDiv" style="display: none;">
+    <div class="divTop">
+        <div class="divClose" onclick="new AddressConfigObj().closeWindow1();"></div>
+        <div class="divTitle">授课IP设置！</div>
+        <div class="divContent">
+            <h3 style="height:53px">
+                <ul class="divButton selBtn aBtn">
+                    <li id="btnCss">
+                        <a id="SysConfig.teachToolConfigButton" href=" javascript:new AddressConfigObj().openWindow();">
+                            <p style="font-size:18px;">网络选择</p></a>
+                    </li>
+                    <li id="btnCss">
+                        <a id="SysConfig.teachToolConfigButton"
+                           href=" javascript:new TeachUrlConfigObj().openWindow1();"><p style="font-size:18px;">手工输入</p>
+                        </a>
+                    </li>
+                </ul>
+                <span style="display:inline-block; line-height:53px; font-size:20px;">请选择学校所在区域！</span>
+            </h3>
+            <div class="areaCon" align="left">
+                <table border="1" geted="false" id="Address_ipSet2">
+                    <tbody>
+                    <tr>
+                        <td colspan=4 style="width:550px;color:#ba0505;">
+                            无法从服务器获取区域信息，请检查网络是否正常或拨打客服电话400-637-1319咨询。也可选择“手工输入”，直接填写服务器地址进行设置。
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page marR2" id="address_mark_N">
+                <div class="pageNext">
+                    <a href="javascript:new NextAddress_ConfigWindow().openWindow();">下一步</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divBottom" style="height: 50px;"></div>
+</div>
+<div id="nextAddUrl_ConfigWindow" class="floatDiv" style="display: none;height:350px">
+    <div class="divTop">
+        <div class="divClose" onclick="new NextAddress_ConfigWindow().closeWindow();"></div>
+        <div class="divTitle">授课IP设置！</div>
+        <div class="divContent">
+            <h3>请选择平台类型</h3>
+            <div class="" id="teachUrlConfig.tip" style="margin:22px;5px;180px;5px;">
+                <p style="font-size: 18px;">学校本地是否部署校平台：
+                    <input type="radio" id="teachUrlConfig_id" name="teachUrlConfig_name" value="2" checked="true"/>未部署
+                    <input type="radio" id="teachUrlConfig_id" name="teachUrlConfig_name" value="1"/>已部署
+                </p>
+            </div>
+            <div class="tipsInfo" style="font-size:14px;text-align:left; line-height:20px; padding:10px 20px;">
+                1、如果未部署校平台，校级与市级授课地址一致，请选择学校所在区域完成设置;<br/>
+                2、如果部署有校平台，请联系学校电教老师获取校级授课IP地址，按示例说明手动配置，市级授课地址请选择学校所在区域完成设置。
+            </div>
+            <div class="page marR2" id="address_mark">
+                <div class="pageNext">
+                    <a href="javascript:new NextAddress_ConfigWindow().closeWindow();">返回</a>
+                </div>
+                <div class="pageNext">
+                    <a href="javascript:new AddressConfigObj().confirmAddress();">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divBottom" style="height: 50px;"></div>
+</div>
+<!-- XXXXXXXXX  授课IP设置 end -->
+<!-- 模板设置 -->
+<!--模板设置-开始-->
+<DIV id=template.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_tUtil.closeWindow();></DIV>
+        <DIV class=divTitle>模板设置！</DIV>
+        <DIV class=divContent>
+            <H3>请您选择所需模板</H3>
+            <IMG src="images/selectImg.png">
+            <UL class=divButton>
+                <LI class=space1><A id=template.board href="javascript:_tUtil.saveTemplateInfo('1');">电子白板</A></LI>
+                <LI class=spaceTV><A id=template.tv href="javascript:_tUtil.saveTemplateInfo('2');">电视机</A></LI>
+            </UL>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--模板设置-结束-->
+<!--USB设备-开始-->
+<DIV id=usb.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_usbObj.closeUSBWindow();></DIV>
+        <DIV class=divTitle> U盘资源！</DIV>
+        <DIV id=usb.ocx class=divContent></DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--USB设备-结束-->
+<!-- 密码修改 START -->
+<div id="pwdConfigWindow" class="floatDiv">
+    <div class="divTop">
+        <div class="divClose"
+             onclick="$('#pwdConfigWindow').hide();maskAllall.style.display='none';return false;"></div>
+        <div class="divTitle">密码修改</div>
+        <div class="divContent pr">
+            <h3 style="background-color:#eeeeee;font-size:14px">
+                应公安部要求，为保证您的个人隐私及信息安全，请您不要使用过于简单的密码!
+            </h3>
+            <dl class="ipSet2">
+                <dt>原密码：</dt>
+                <dd><input type="password" id="old_pwd" style="width: 360px;"/></dd>
+                <dt>新密码：</dt>
+                <dd><input type="password" id="new_pwd" value="" style="width: 360px;"/></dd>
+                <dt>确认新密码：</dt>
+                <dd><input type="password" id="renew_pwd" value="" style="width: 360px;"/></dd>
+            </dl>
+            <span class="clearfix"></span>
+            <div class="tipsInfo" style="font-size:14px">为保证您的密码安全，请您设置为8-12位字母、数字组合。</div>
+            <br/>
+            <!-- 提示信息 -->
+            <div id="pwdConfigTip" style="color:red;font-size:16px;background-color:#fffafe"></div>
+            <div class="page marR2">
+                <div class="pageNext"><a
+                        onclick="$('#pwdConfigWindow').hide();maskAllall.style.display='none';return false;">关 闭</a>
+                </div>
+                <div class="pageNext"><a onclick="pwdConfig.ok();" href="#">确 定</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="divBottom" style="height: 50px;"></div>
+</div>
+<!-- 密码修改 END -->
+<!-- 关于授课 -->
+<DIV style="DISPLAY: none;" id=aboutWindow class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=document.getElementById("aboutWindow").style.display="none"></DIV>
+        <DIV class=divTitle>关于授课端</DIV>
+        <DIV class=divContent style="text-align: left;padding:10px;">
+            <UL id="aboutInfo">
+                <!--
+                <LI>优教授课版本：V1.01.61 </LI>
+                <LI>有新版本：<a class="versionButton">立即更新</a></LI>
+                <LI>互动学习卡接收器型号：V1.01.61 </LI>
+                <LI>windows版本：V1.01.61 </LI>
+                <LI>咨询电话：400-637-1319 </LI>
+                 -->
+            </UL>
+            <SPAN class=clearfix></SPAN>
+        </DIV>
+        <SPAN class=clearfix></SPAN>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--等待面板begin -->
+<script type="text/javascript">
+    //服务端样式参数默认通用
+    defaultcssname = "nantong";
+    _common.cssName = defaultcssname;
+    _loginObj.createKeyBoard();
+    _footTools.initBtn();
+    _loginObj.checkUpdate();
+
+    _loginObj.ssoAuth = "1";
+    _common.initPage();
+
+</script>
+</body>
+</HTML>

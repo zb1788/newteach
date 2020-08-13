@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <servlet>
+        <servlet-name>UIController</servlet-name>
+        <servlet-class>vcom.servlet.UIController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UIController</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>SsoSessionFailFilter</filter-name>
+        <filter-class>vcom.sso.util.SsoSessionFailFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SsoSessionFailFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>SsoSessionFailFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>
+            vcom.sso.SsoServiceCfgListener
+        </listener-class>
+    </listener>
+
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/common/error_404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/common/error_500.jsp</location>
+    </error-page>
+</web-app>
+

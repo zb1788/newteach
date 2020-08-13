@@ -1,0 +1,13 @@
+@import url("style.css");
+
+/*重定义部分*/
+.main,.mainLeft,.mainRight{height:508px;}
+.closePC{ top:687px;LEFT:1318px}
+.login {MARGIN: 350px 20px 10px;}
+.bottomlogo2 {top:685px;left:490px; }
+UL#keyboard{ left:440px;}
+#versionshow {POSITION: absolute; FONT-SIZE: 13px; TOP: 10px; RIGHT: 225px}
+#waithtml2 {left:600px}
+/*登录页面*/
+.setBg{background:url(../images/1360/loginBg.jpg) left top no-repeat; width:1360px; height:760px;}/*登陆Bg*/
+/*.banner{margin-left:215px;}*/

@@ -1,0 +1,66 @@
+﻿<list>
+
+
+    <!-- 跳转至登录页面 -->
+    <ui url="toLoginPage" class="vcom.newteach.action.BaseAction" method="transit">
+        <result name="success">login.jsp</result>
+    </ui>
+
+    <!-- sso端登陆认证 -->
+    <ui url="loginBySSO" class="vcom.newteach.action.LoginAction" method="loginBySSO">
+        <result name="success">transfer.jsp</result><!--?allow=false?cssName=tongyong-->
+    </ui>
+    <!-- 跳转至首页-->
+    <ui url="index" class="vcom.newteach.action.TeachAction" method="toIndexPage">
+        <result name="success">teach.jsp</result>
+        <result name="loginerror">loginerror.jsp</result>
+    </ui>
+
+    <!-- 跳转到作业-->
+    <ui url="shouzuoye" class="vcom.newteach.action.LoginAction" method="shouzuoye">
+        <result name="success">inc/zuoye.jsp</result>
+    </ui>
+
+    <!-- 检查是否发短信-->
+    <ui url="needPhoneCode" class="vcom.newteach.mobile.MobileAction" method="needPhoneCode"/>
+
+    <ui name="sendPhoneCode" class="vcom.newteach.mobile.MobileAction" method="sendPhoneCode"></ui>
+    <ui name="validatePhoneCode" class="vcom.newteach.mobile.MobileAction" method="validatePhoneCode"></ui>
+    <!-- 进行临时验证 -->
+    <ui name="sendTmpCode" class="vcom.newteach.mobile.MobileAction" method="sendTmpCode"></ui>
+    <ui name="validateTmpCode" class="vcom.newteach.mobile.MobileAction" method="validateTmpCode"></ui>
+
+
+    <ui url="readyforlogin" class="vcom.newteach.action.LoginAction" method="readyforlogin"/>
+    <ui url="getUsername" class="vcom.newteach.action.LoginAction" method="getUsername"/>
+    <ui url="getSsoUrl" class="vcom.newteach.action.LoginAction" method="getSsoUrl"/>
+
+    <ui url="getSKCustomMenuXml" class="vcom.newteach.action.MenuAction" method="getSKCustomMenuXml"/>
+    <!-- 发送消息队列 -->
+    <ui url="report" class="vcom.newteach.report.ReportAction" method="praiseStudentReport"/>
+
+
+    <!-- 历史用户更新或增加 -->
+    <ui url="AccessAddLog" class="vcom.newteach.action.UserLoginLogAction" method="AccessAddLog">
+        <result name="success">/showJsonData.jsp</result>
+    </ui>
+    <!-- 历史用户列表 -->
+    <ui url="AccessQueLog" class="vcom.newteach.action.UserLoginLogAction" method="AccessQueLog">
+        <result name="success">/showJsonData.jsp</result>
+    </ui>
+    <!-- 删除历史用户 -->
+    <ui url="historyUserDel" class="vcom.newteach.action.UserLoginLogAction" method="historyUserDel">
+        <result name="success">/showJsonData.jsp</result>
+    </ui>
+
+    <!-- post服务端请求 -->
+    <ui url="postData" class="vcom.newteach.action.PostAction" method="postData"/>
+
+    <!-- 服务端日志记录 -->
+    <ui url="addLog" class="vcom.newteach.action.LogAction" method="WriteLog"/>
+
+    <!-- 返回配置域名 -->
+    <ui url="getConfig" class="vcom.newteach.action.ConfigAction" method="showConfig">
+        <result name="success">/showJsonData.jsp</result>
+    </ui>
+</list>

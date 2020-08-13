@@ -1,0 +1,293 @@
+/*base*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 12px;
+    font-weight: normal
+}
+
+body > div {
+    margin: 0 auto
+}
+
+div {
+    text-align: left
+}
+
+a img {
+    border: 0
+}
+
+body {
+    color: #333;
+    text-align: center;
+    font: 12px "����";
+}
+
+ul, ol, li {
+    list-style-type: none;
+    vertical-align: 0
+}
+
+a {
+    outline-style: none;
+    color: #535353;
+    text-decoration: none
+}
+
+a:hover {
+    color: #D40000;
+    text-decoration: none
+}
+
+.button {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: baseline;
+    margin: 0 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 0.25em 0.6em 0.3em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
+.red {
+    color: #faddde;
+    border: solid 1px #980c10;
+    background: #d81b21;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#A51715));
+    background: -moz-linear-gradient(top, #ed1c24, #A51715);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+
+.red:hover {
+    background: #b61318;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+    background: -moz-linear-gradient(top, #c9151b, #a11115);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+    color: #fff;
+}
+
+.red:active {
+    color: #de898c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+    background: -moz-linear-gradient(top, #aa1317, #ed1c24);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+}
+
+.cor_bs, .cor_bs:hover {
+    color: #ffffff;
+}
+
+.keTitle {
+    height: 100px;
+    line-height: 100px;
+    font-size: 30px;
+    font-family: '΢���ź�';
+    color: #FFF;
+    text-align: center;
+    background: url(../images/bodyBg3.jpg) repeat-x bottom left;
+    font-weight: normal
+}
+
+.kePublic {
+    background: #FFF;
+    padding: 50px;
+}
+
+.keBottom {
+    color: #FFF;
+    padding-top: 25px;
+    line-height: 28px;
+    text-align: center;
+    font-family: '΢���ź�';
+    background: url(../images/bodyBg2.jpg) repeat-x top left;
+    padding-bottom: 25px
+}
+
+.keTxtP {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.keUrl {
+    color: #FFF;
+    font-size: 30px;
+}
+
+.keUrl:hover {
+    text-decoration: underline;
+    color: #FFF;
+}
+
+/*��e������Ч�������CSS������Ӧ����Чʱ��������ʽ��ɾ��*/
+/* Ч��CSS��ʼ */
+.mod18 {
+    margin: 0px auto;
+    position: relative;
+    background: #f7f7f7;
+}
+
+.mod18 .btn {
+    position: absolute;
+    width: 15px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mod18 .prev {
+    left: 0;
+    background: url(./image/prevBtn.png) no-repeat;
+}
+
+.mod18 .next {
+    right: 0;
+    background: url(./image/nextBtn.png) no-repeat;
+}
+
+.mod18 #prevTop, .mod18 #nextTop {
+    top: 213px;
+    width: 46px;
+    height: 48px;
+}
+
+.mod18 #prevTop {
+    background: url(./image/prevBtnTop.png) 0 0 no-repeat;
+}
+
+.mod18 #nextTop {
+    background: url(./image/nextBtnTop.png) 0 0 no-repeat;
+}
+
+
+.mod18 li {
+    float: left;
+}
+
+.mod18 .picBox {
+    position: relative;
+    overflow: hidden;
+}
+
+.mod18 .picBox div img {
+    position: absolute;
+}
+
+.mod18 .listBox {
+    position: relative;
+    height: 70px;
+    margin: 0 auto;
+    padding: 3px 0 0px;
+    overflow: hidden;
+}
+
+.mod18 .listBox ul {
+    height: 70px;
+    position: absolute;
+    left: 15px
+}
+
+.mod18 .listBox li {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+}
+
+.mod18 .listBox li i {
+    display: none;
+}
+
+.mod18 .listBox li a {
+    display: block;
+    width: 124px;
+    height: 70px;
+}
+
+.mod18 .listBox li img {
+    width: 65px;
+    height: 65px;
+}
+
+.mod18 .listBox .on img {
+    width: 62px;
+    height: 62px;
+    border: 3px solid #ff6600;
+}
+
+.mod18 .listBox .on i {
+    display: block;
+}
+
+/* Ч��CSS���� */
+
+.btn {
+    height: 43px;
+    line-height: 43px;
+    text-indent: 1em;
+    background: url(./image/btn.png) bottom repeat-x;
+    border-top: 2px solid #ddd;
+}
+
+.btn span {
+    float: right;
+    margin-right: 5px;
+    width: 106px;
+    height: 33px;
+    background: url(./image/btn.png) 0 -66px no-repeat;
+}
+
+.btnA, .btnB, .btnC, .btnAH, .btnBH, .btnCH {
+    cursor: pointer;
+    width: 53px;
+    height: 33px;
+    float: left;
+}
+
+.btnA {
+    background: url(./image/btn.png) 0 -33px no-repeat;
+}
+
+.btnAH {
+    background: url(./image/btn.png) 0 0 no-repeat;
+}
+
+.btnB {
+    background: url(./image/btn.png) -63px -33px no-repeat;
+}
+
+.btnBH {
+    background: url(./image/btn.png) -63px 0 no-repeat;
+}
+
+.btnC {
+    background: url(./image/btn.png) -126px -33px no-repeat;
+}
+
+.btnCH {
+    background: url(./image/btn.png) -126px 0 no-repeat;
+}
+
+dd {
+    height: 30px;
+    width: 300px;
+    text-align: left;
+    float: left;
+}

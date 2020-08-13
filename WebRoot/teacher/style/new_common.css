@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 12px;
+}
+
+body {
+    font: 12px "宋体";
+    color: #555;
+    background: #fff;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+    color: #454545;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.hongfon:link {
+    color: #c00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.hongfon:visited {
+    color: #c00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.hongfon:hover {
+    color: #f60;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.hongfon:active {
+    color: #c00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.blue:link {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.blue:visited {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.blue:hover {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #c00;
+    text-decoration: underline;
+}
+
+a.blue:active {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.del:link {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.del:visited {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.del:hover {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #c00;
+    text-decoration: underline;
+}
+
+a.del:active {
+    font-family: 宋体;
+    font-weight: normal;
+    color: #168acc;
+    text-decoration: none;
+}
+
+a.blue2:link {
+    font-family: 宋体;
+    font-weight: bold;
+    font-size: 14px;
+    color: #168acc;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+a.blue2:visited {
+    font-family: 宋体;
+    font-weight: bold;
+    font-size: 14px;
+    color: #168acc;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+a.blue2:hover {
+    font-family: 宋体;
+    font-weight: bold;
+    font-size: 14px;
+    color: #c00;
+    text-decoration: underline;
+    line-height: 24px;
+}
+
+a.blue2:active {
+    font-family: 宋体;
+    font-weight: bold;
+    font-size: 14px;
+    color: #168acc;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, img, select {
+    vertical-align: middle;
+}
+
+/*清除float*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 0;
+}
+
+.clearfix {
+    display: block;
+    overflow: auto;
+    clear: both;
+    height: 0;
+}
+
+.clea {
+    clear: both;
+}
+
+.orangeFon {
+    font-family: Arial, 宋体;
+    color: #f60;
+    font-weight: bold;
+}
+
+.orangeFon2 {
+    font-family: Arial, 宋体;
+    color: #f60;
+}
+
+.redfon {
+    color: #c00;
+    font-family: Arial, 宋体;
+    font-weight: bold;
+}
+
+.redfon2 {
+    color: #c00;
+}
+
+.bluefon {
+    color: #1376bf;
+}
+
+.greenfon {
+    font-family: Arial, 宋体;
+    font-size: 12px;
+    color: #429000;
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.grayfon {
+    font-family: Arial, 宋体;
+    color: #899198;
+}
+
+.h385 {
+    height: 385px;
+    overflow: hidden;
+}
+
+.name {
+    font: normal 14px Arial, 宋体;
+}
+
+.w195 {
+    width: 185px;
+}
+
+.h35 {
+    height: 35px;
+    overflow: hidden;
+}
+
+.udline {
+    text-decoration: underline;
+}
+
+.soujin {
+    text-indent: 2em;
+}
+
+]
+.fon14 {
+    font-size: 14px;
+}
+
+.youqi {
+    text-align: right;
+}
+
+.containers {
+    width: 1000px;
+    margin: 0px auto;
+}
+

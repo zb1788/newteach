@@ -1,0 +1,117 @@
+.toplogo {
+    background-image: url(dianxinxuhong/logo.png);
+}
+
+.xuan {
+    background: url(dianxinxuhong/images/new/xuanke.png);
+}
+
+.iconSet a {
+    background: url(dianxinxuhong/images/new/iconSet.png) no-repeat;
+}
+
+.pageNext a#prove {
+    background: url(dianxinxuhong/images/previous.png) no-repeat;
+}
+
+
+/* ��ʦ����������ɫ*/
+.welcome {
+    background: url(dianxinxuhong/images/new/welcome.png) right no-repeat;
+}
+
+.welcome span {
+    color: #00bd52;
+}
+
+/* �༶����������ɫ*/
+.nowclass {
+    color: #00bd52;
+}
+
+/* ����ɫ*/
+body {
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#ffffff');
+}
+
+/* ȥ������ͼƬ*/
+.containers {
+    background-image: none;
+}
+
+/* �˵�����ɫ*/
+.nav {
+    background-color: #b3b3b3;
+}
+
+/* �˵��ױ߿�ɫ*/
+.nav-list li a {
+    border-bottom: 5px solid #00bd52;
+}
+
+/* �˵�ѡ�����ɫ ��ɫ*/
+ul#menu li a.sel, ul#menu li a.sel:hover {
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#f8b502', EndColorStr='#f8b562');
+}
+
+/* �����˵�ѡ����ױ߿�ɫ*/
+.subMenu a.cur {
+    border-bottom: 3px solid #00bd52;
+}
+
+.topMenu ul li a:hover {
+    background-color: #00bd52;
+}
+
+/*����Ӧ�ñ���ɫ*/
+ul.menuMore li a {
+    background-color: #00bd52;
+    filter: none;
+    border-bottom: 3px solid #dbdbdb;
+}
+
+/* ��Դ����ѡ�����ɫ*/
+ul.testList li a:hover {
+    background-color: #00bd52;
+}
+
+ul.resList li a:active, ul.resList li a:hover {
+    background: #00bd52;
+}
+
+dl.course dd a:active, dl.course dd a:hover, dl.course dd a.sel {
+    background: #00bd52;
+}
+
+ul.testList li strong {
+    color: #00bd52;
+}
+
+/* ��ҳ��ť����ɫ*/
+.pages a {
+    background-color: #00bd52;
+}
+
+.pages a:hover {
+    background-color: #00bd52;
+}
+
+.pages a.disabled {
+    background-color: #dbdbdb;
+    color: #999;
+}
+
+/*ѡ�ΰ�ťλ�õ���*/
+.xuan {
+    margin-top: 0px;
+}
+
+/*�������*/
+.divTop {
+    background: url(dianxinxuhong/images/floatDiv.png) no-repeat;
+}
+
+.divBottom {
+    background: url(dianxinxuhong/images/floatDiv.png) bottom no-repeat;
+}
+

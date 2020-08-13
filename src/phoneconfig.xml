@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GBK"?>
+<vcom>
+    <!-- 是否启用手机绑定验证1,启用，0未启用 -->
+    <boundphone>0</boundphone>
+    <!-- 需要启动的用户角色,前后用逗号 -->
+    <usertype>,0,2,3,</usertype>
+    <!-- 短信网关地址编号 -->
+    <viManageIcode>VSMS.SEND</viManageIcode>
+    <!-- 用户 -->
+    <vsms_platUser>sxt</vsms_platUser>
+    <!-- 密码 -->
+    <vsms_platPwd>sxt</vsms_platPwd>
+    <!-- 短信内容 -->
+    <vsms_content>尊敬的优教通用户，欢迎您使用优教通业务，您的账户验证码为：###。</vsms_content>
+    <!-- 验证时长，0标示每次都验证，1表示一天验证一次，2表示两天验证一次，依次类推 -->
+    <vsms_day>5</vsms_day>
+    <boundArea>35.08.,</boundArea><!-- 需要启动的区域(以区域开头的).多个区域用逗号分割 -->
+    <!--订购提醒 -->
+    <serviceType>2.1.6.</serviceType>
+    <tmpCodeCount>5</tmpCodeCount><!-- 获取临时验证码的最大次数 -->
+    <message>
+        <area>
+            <!-- 是否开启免费提醒,和未绑定手机号提醒1开启，0关闭 -->
+            <alerttype>0</alerttype>
+            <!-- 区域代码河南 -->
+            <areacode>1.</areacode>
+            <!-- 区域提示信息-->
+            <areamessage>您尚未开通******套餐。请您及时至附近联通营业厅开通******套餐，共享精品学习资源、共同关注孩子成长。</areamessage>
+            <!-- 订购提示短信 -->
+            <areaphonenumber>10010</areaphonenumber>
+        </area>
+        <area>
+            <!-- 是否开启免费提醒,和未绑定手机号提醒1开启，0关闭 -->
+            <alerttype>0</alerttype>
+            <!-- 区域代码福建 -->
+            <areacode>2.</areacode>
+            <!-- 区域提示信息-->
+            <areamessage>您尚未开通******套餐。请您及时至附近联通营业厅开通******套餐，共享精品学习资源、共同关注孩子成长。</areamessage>
+            <!-- 订购提示短信 -->
+            <areaphonenumber>10010</areaphonenumber>
+        </area>
+    </message>
+    <!-- 检查用户重复登录时间 -->
+    <repeatCheckTime>200000</repeatCheckTime>
+</vcom>

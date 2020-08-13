@@ -1,0 +1,77 @@
+/* 宸ュ叿鏍� by rwy 2016.01.04 */
+*{ margin:0; padding:0; x-srcolling:none;}
+body{  scrollbar-face:none; }
+ul li{ list-style:none; text-decoration:none; }
+.clearfix{ clear:both;}
+a{ text-decoration:none; }
+.blank{ clear:both; height:15px; width:100%;}
+img { border:none;}
+
+.main{ width:105px; height:500px; position:fixed; bottom:10px; right:0px; z-index:10000000;}
+.bar{ width:36px; height:70px; position:absolute; right:0px; top:220px; 
+      background:url(../image/close.png) no-repeat; display:block;}
+.open{ background:url(../image/open.png) no-repeat; display:block; right:0px;top:0px;
+	   position:absolute; height:500px; width:107px;}
+.open ul { display:block; position:absolute; right:0; top:35px; width:70px;}
+.open ul li{ height:57px; width:71px; border-bottom:1px solid #383838; }
+.open ul li:hover{ background:#3d3d3d;}
+a.close{ width:35px; height:60px; position:relative; right:0px; top:220px; 
+          display:block; border:0px solid #ccc; }
+.open ul li a{ height:57px; width:71px; text-decoration:none; display:block;}
+.open ul li img{ display:block; margin:0 auto; width:30px; height:30px; }
+span.word{ color:#fff; width:71px; display:block; text-align:center; font:normal 13px/22px Microsoft YaHei;}
+.more{  width:142px; height:115px; border:1px solid #333333; border-bottom:none; 
+        background:#535353;
+		position:absolute;
+		right:70px; bottom:0px; display:inline-block;}
+.more ul { top:0; display:block; width:142px;}
+.more ul li { float:left;}
+.xuan{  width:150px; height:56px; border:1px solid #333333; 
+        background:#535353;
+		position:absolute;
+		right:71px; top:116px; font:normal 12px/57px Microsoft YaHei;}
+.xuan a{ width:71px; color:#fff; text-align:center; 
+         display:block; float:left; height:56px;}
+.xuan a:hover{ background:#3d3d3d;}
+/*--------------------鎶㈢瓟--------*/
+.bg{ background:#000;
+       position:fixed; 
+      _position:absolute; top:0; left:0;
+	  width:100%;
+	  width:expression(body.scrollWidth) \9;
+	  height:100%;
+	  _height:expression(body.scrollHeight) \9;
+	  z-index:1000;
+	  opacity:0.35; 
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+	  filter:alpha(opacity=35);}
+.k_da{ display:none; height:auto; z-index:100000; margin-bottom:15px;}
+.del{  background:#999 url(../image/tools.png) right -160px no-repeat;
+		  height: 30px;
+		  width: 36px;
+		  display: block;
+		  position: absolute;
+		  top: 0;
+		  right: 0;}
+.del:hover{ background-color:#ee2f2f;}
+.tan{ position:fixed; width:640px; border:10px solid #555; left:50%; 
+         margin-left:-330px; bottom:9%;background-color:#fff; /*-moz-box-shadow:0 0 10px rgba(0,0,0,.4);-webkit-box-shadow:0 0 10px rgba(0,0,0,.4);-box-shadow:0 0 10px rgba(0,0,0,.4);*/}
+.title{ background-color:#e4e4e4; border-bottom:1px solid #ccc; height:40px; line-height:40px; position:relative;}
+.title h2{ font-size:18px; margin:0 20px;}
+.box{ padding:15px;}
+.box p{ text-align:center; font:normal 22px/45px Microsoft YaHei; }
+.box i{ display:block; margin:0 auto; width:300px; margin-top:25px; vertical-align:middle;}
+.box i img{ margin-right:10px; vertical-align:middle;}
+.box i span{vertical-align:middle;}
+#k_answer{ background-color:#fff; margin:20px;}
+input.but{ border:none; width:150px; height:35px; font:normal 16px/35px Microsoft YaHei; color:#fff; background:#269bd7;
+           border-radius:3px; text-align:center; outline:0; cursor:pointer;}
+.b{ display:block; margin:10px auto; text-align:center; clear:both; position:absolute; left:0; bottom:10px; width:100%; text-align:center;}
+.box_t { padding:10px;}
+.box_t p{ text-align:center; font:normal 24px/45px Microsoft YaHei; }
+.red{ color:#F00}
+/*------------------閫変汉-----------------------*/
+.sj_xr{margin:0 auto;text-align: center;}
+.qw_xr{  margin:0 auto;text-align: center;}
+.comments{position:absolute;z-index:5; margin:0 auto;text-align: center;width:100%;height:100%}
+.dati{padding:10px 35px;font:normal 30px ‘微软雅黑’; display:inline-block; background:#0096d6;border-radius:3px; color:#fff;}

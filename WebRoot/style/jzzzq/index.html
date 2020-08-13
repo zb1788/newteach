@@ -1,0 +1,1636 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+    <TITLE>基础教育班班通工程</TITLE>
+    <METAHTTP-EQUIV
+    ="Pragma"CONTENT="no-cache">
+    <METAHTTP-EQUIV
+    ="Cache-Control"CONTENT="no-cache">
+    <METAHTTP-EQUIV
+    ="Expires"CONTENT="0">
+    <META content="text/html; charset=gb2312" http-equiv=Content-Type>
+    <META content=ie=7 http-equiv=x-ua-compatible>
+    <STYLE>
+        .toplogo {
+            BACKGROUND-IMAGE: url(images/logo.png);
+            POSITION: absolute;
+            WIDTH: 582px;
+            BACKGROUND-REPEAT: no-repeat;
+            HEIGHT: 52px;
+            TOP: 30px;
+            LEFT: 30px
+        }
+
+        .bottomlogo {
+            BACKGROUND-IMAGE: url(images/logobottom1.png);
+            BACKGROUND-REPEAT: no-repeat;
+            backbackground-position: center
+        }
+    </STYLE>
+
+    <script type="text/javascript">
+        if (screen.width >= 1360) {
+            document.write("<link href='css/style1360.css' rel='stylesheet' type='text/css' />");
+        } else if (screen.width == 1280 && screen.height == 768) {
+            document.write("<link href='css/style1280_768.css' rel='stylesheet' type='text/css' />");
+        } else if (screen.width == 1280 && screen.height == 800) {
+            document.write("<link href='css/style1280_800.css' rel='stylesheet' type='text/css' />");
+        } else if (screen.width < 1360 && screen.width >= 1280) {
+            document.write("<link href='css/style1280_768.css' rel='stylesheet' type='text/css' />");
+        } else {
+            document.write("<link href='css/style.css' rel='stylesheet' type='text/css' />");
+        }
+    </script>
+
+
+    <SCRIPT language=javascript src="js/validate_common.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/ajax_common.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/common.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/ajax_common.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/teach_constant.js"></SCRIPT>
+    <!-- 快捷键 -->
+    <SCRIPT language=javascript src="js/jquery-1.2.6.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/simple_hotkey.js"></SCRIPT>
+    <!-- 模板设置  -->
+    <SCRIPT language=javascript src="js/template.js"></SCRIPT>
+    <!-- 教学工具  -->
+    <SCRIPT language=javascript src="js/teach_tools.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/mac_util.js"></SCRIPT>
+
+    <SCRIPT language=javascript src="js/login.js"></SCRIPT>
+
+    <!--
+    <SCRIPT language=javascript src="js/jquery-1.4.2.min.js"></SCRIPT>
+-->
+
+    <STYLE>
+        #error2 {
+            BORDER-BOTTOM: #ffd0a8 1px solid;
+            POSITION: absolute;
+            TEXT-ALIGN: left;
+            BORDER-LEFT: #ffd0a8 1px solid;
+            PADDING-BOTTOM: 10px;
+            PADDING-LEFT: 45px;
+            PADDING-RIGHT: 5px;
+            HEIGHT: 20px;
+            FONT-SIZE: 16px;
+            BORDER-TOP: #ffd0a8 1px solid;
+            TOP: 52px;
+            BORDER-RIGHT: #ffd0a8 1px solid;
+            PADDING-TOP: 10px;
+            LEFT: 666px
+        }
+
+        .usbSpace4 {
+            padding-left: 0px;
+        }
+
+        .usbSpace3 {
+            padding-left: 30px;
+        }
+
+        .usbSpace2 {
+            padding-left: 30px;
+        }
+    </STYLE>
+
+    <META name=GENERATOR content="MSHTML 8.00.7600.16671">
+</HEAD>
+<BODY class=loginBg scroll=no onDragStart="return false;">
+<DIV id=versionshow></DIV>
+<div style="display: none">
+    <OBJECT ID="IInformationOcx"
+            CLASSID="CLSID:BC3A0C61-8959-4D26-B3F3-509E131C5945" width="0"
+            height="0">
+    </OBJECT>
+</div>
+<DIV class="containers setBg">
+    <DIV class=login>
+        <DIV class=idpw>
+            用户名：
+            <INPUT
+                    onkeydown="if(event.keyCode==13||event.keyCode==39) event.keyCode=9;"
+                    id=login.username onclick=_loginObj.setActInputObj(this);
+                    maxLength=16 size=16>
+            <SCRIPT type=text/javascript>
+                <!--
+                //alert(document.getElementById("login.username").focus());
+                document.getElementById("login.username").focus();
+                _loginObj.setActInputObj(document.getElementById("login.username"));
+                //-->
+            </SCRIPT>
+            密码：
+            <INPUT
+                    onkeydown="if(event.keyCode==13) _loginObj.login(); if(event.keyCode==37) document.getElementById('login.username').focus();"
+                    id=login.pwd onclick=_loginObj.setActInputObj(this); maxLength=12
+                    type=password>
+            <BUTTON id=login.login onclick=_loginObj.login();>
+                登 录
+            </BUTTON>
+            &nbsp;&nbsp;
+            <INPUT style="WIDTH: 25px" id=rememberFlag type=checkbox name="">
+            记住密码
+            <UL id=keyboard></UL>
+            <DIV id=login.tip></DIV>
+        </DIV>
+        <UL id=userName></UL>
+    </DIV>
+    <SCRIPT type=text/javascript>
+        <!--
+        _loginObj.errTop = 5;//_loginObj
+        _loginObj.errLeft = -25;
+        //-->
+    </SCRIPT>
+    <SPAN class=clearfix></SPAN>
+    <UL style="MARGIN-TOP: 35px;padding-left: 295px;" class=indexTools id="indexTools">
+        <li id="tools.usb" style="padding-left: 30px;">
+            <a href="#" onclick="_usbObj.openUSBWindow(540,280);">U盘资源</a>
+        </li>
+        <li>
+            <a href="#" onclick="_sysConfg.openWindow();">系统设置</a>
+        </li>
+        <li id="tools.softkeyborard" style="display: none">
+            <a style="background-image: url('images/hao.jpg')" href="#"
+               onclick="ocx.playFile('C:\\WINDOWS\\system32\\osk.exe');">软键盘</a>
+        </li>
+        <li id="tools.whiteBoard" style="display: none">
+            <a href="javascript:_teachTools.openBoardTool();">板书工具</a>
+        </li>
+        <li id="tools.teach" style="display: none">
+            <a href="javascript:_teachTools.openTeachTool();">教学工具</a>
+        </li>
+        <li id="newTool" style="display: none">
+            <a href="javascript:_teachTools.openBoardTool();">白板工具</a>
+        </li>
+        <li id="clearImgCache" style="display: none">
+            <a href="#" onclick="_footTools.clearImgCache();" ;>清除记录</a>
+        </li>
+        <li id="toolposition" style="display: none">
+            <a href="#" onclick="_footTools.toolposition();" ;>白板定位</a>
+        </li>
+
+        <!-- 新系统 begin -->
+        <li id="teachToolConfigs.name0" style="display: none">
+            <a href="javascript:_teachToolConfigObj.openExe(0);"
+               id="teachToolConfigs.name0_id">***</a>
+        </li>
+        <li id="teachToolConfigs.name1" style="display: none">
+            <a href="javascript:_teachToolConfigObj.openExe(1);"
+               id="teachToolConfigs.name1_id">***</a>
+        </li>
+        <li id="teachToolConfigs.name2" style="display: none">
+            <a href="javascript:_teachToolConfigObj.openExe(2);"
+               id="teachToolConfigs.name2_id">***</a>
+        </li>
+        <!-- 新系统 end -->
+    </UL>
+</DIV>
+<DIV id="tools.softkeyborard_float" class="softkeyborardfloat" style="display:none;">
+    <DIV>
+        <UL id=navTool>
+            <LI id=softkeyborard>
+                <A onclick="ocx.playFile('C:\\WINDOWS\\system32\\osk.exe');"
+                   href="#">软键盘</A>
+            </LI>
+        </UL>
+    </DIV>
+</DIV>
+<!-- 获取mac地址的控件 begin -->
+<DIV style="DISPLAY: none">
+    <OBJECT id=mac_ocx name=mac_ocx
+            classid=clsid:3bde69c2-9ec0-4636-868c-9e400a44e765></OBJECT>
+</DIV>
+<DIV id=waithtml2 style="DISPLAY: none"><IMG src="images/a_send.gif"> 正在获取用户，请稍后....
+</DIV>
+<DIV style="DISPLAY: none" id=mask></DIV>
+<DIV style="DISPLAY: none" id=upload class=floatDiv2>
+    <DIV class=title>
+        <A href="javascript:tocloseupload();"><IMG src="images/x.gif">
+        </A>
+        <H5 id=__openfile>
+            正在加载资源，请稍候....
+        </H5>
+    </DIV>
+    <SPAN class=clearfix></SPAN>
+    <DIV id=uploadlist></DIV>
+</DIV>
+<OBJECT id=ocx
+        codeBase="http://125.46.92.81:80/officdown.cab#version=1,0,1,4"
+        classid=CLSID:B02201C9-1789-4FF0-B95F-C1A03D8B6B99 width=0 height=0>
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="10583">
+    <PARAM NAME="_ExtentY" VALUE="10583">
+    <PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+<SCRIPT language=JavaScript for=ocx event=OnXmlFinish(strXML)>
+    if (filedowntype == 1) {
+        OnXmlFinish2(strXML);
+    } else if (filedowntype == 2) {
+        OnXmlFinish(strXML);
+    } else if (filedowntype == 3) {
+        OnXmlFinish3(strXML);
+    }
+</SCRIPT>
+
+<SCRIPT language=JavaScript for=ocx event=OnProccess(pos,speed)>
+    if (filedowntype == 1) {
+        updatePos2(pos, speed);
+    } else if (filedowntype == 2) {
+        updatePos(pos, speed);
+    } else if (filedowntype == 3) {
+        updatePos3(pos, speed);
+    }
+</SCRIPT>
+
+<SCRIPT language=JavaScript for=ocx event=OnStateChange(state,errMsg)>
+    updateState(state, errMsg);
+</SCRIPT>
+
+<SCRIPT>
+    var ocxversion = "1.0.1.4";
+</SCRIPT>
+<!-- 获取mac地址的控件 end -->
+<DIV class="closePC close" onclick=_common.exitSystem();></DIV>
+<DIV style="DISPLAY: none" id=maskAllall>
+    <DIV id=waithtml>
+        <IMG src="images/extanim32.gif">
+        正在加载数据，请稍后....
+    </DIV>
+</DIV>
+<DIV style="DISPLAY: none" id=maskAll></DIV>
+<!-- 系统设置 begin -->
+<!--系统设置-开始-->
+<DIV id=sysConfig.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_sysConfg.closeWindow();></DIV>
+        <DIV class=divTitle>
+            系统设置！
+        </DIV>
+        <DIV class=divContent>
+            <H3>
+                请您进行系统设置
+            </H3>
+            <UL class=divButton>
+                <LI id="btnCss" class=space4>
+                    <A id=SysConfig.teachipbutton
+                       href="javascript:new TeachUrlConfigObj().openWindow(3);">授课ip设置</A>
+
+                </LI>
+                <li>
+                    <a id="SysConfig.teachToolConfigButton"
+                       href="javascript:_teachToolConfigObj.openWindow(3);">工具配置</a>
+                </li>
+            </UL>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--系统设置-结束-->
+<!--密码 窗口 begin-->
+<DIV style="DISPLAY: none" id=sysConfig.passwdWindow class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_sysConfg.closePasswdWindow();></DIV>
+        <DIV class=divTitle>
+            密码验证！
+        </DIV>
+        <DIV class=divContent>
+            <H3>
+                密码验证
+            </H3>
+            <DL class=ipSet>
+                <DT>
+                    请输入密码：
+                </DT>
+                <DD>
+                    <INPUT id=sysConfig.passwd maxLength=10 type=password>
+                </DD>
+            </DL>
+            <SPAN class=clearfix></SPAN>
+        </DIV>
+        <SPAN class=clearfix></SPAN>
+        <!-- 提示信息 -->
+        <DIV id=sysConfig.tip></DIV>
+        <DIV class="page marR2">
+            <DIV class=pageNext>
+                <A href="javascript:_sysConfg.closePasswdWindow();">返 回</A>
+            </DIV>
+            <DIV class=pageNext>
+                <A href="javascript:_sysConfg.validatePasswd();">确 定</A>
+            </DIV>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--密码 窗口 end-->
+<SCRIPT language=JavaScript>
+    var _sysConfg = new SysConfigObj();
+
+    function SysConfigObj() {
+    }
+
+    //_sysConfg.closePasswdWindow(); 关闭密码窗口
+    SysConfigObj.prototype.closePasswdWindow = function (flag) {
+        if (undefined == flag)//显示u盘背景
+            _usbObj.visible();
+
+
+        void (document.getElementById('sysConfig.passwdWindow').style.display = 'none');
+
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = null; //取消对该层简单热键支持
+
+        maskAll.style.display = 'none';
+
+    };
+
+    //_sysConfg.validatePasswd(); 验证密码窗
+    SysConfigObj.prototype.validatePasswd = function () {
+        var pwd = document.getElementById('sysConfig.passwd').value;
+
+        if (pwd == '') {
+            document.getElementById('sysConfig.tip').className = "tipsInfo";
+            document.getElementById('sysConfig.tip').innerHTML = '请输入密码！';
+            return;
+        } else if (pwd != '888888') {
+            document.getElementById('sysConfig.tip').className = "tipsInfo";
+            document.getElementById('sysConfig.tip').innerHTML = '密码错误，请重新输入！';
+            return;
+        } else {
+            _sysConfg.closePasswdWindow(true);
+            this.openSystemConfigWindow();
+        }
+
+    };//end of validatePasswd
+
+    //_sysConfg.openPasswdWindow(); 打开密码窗口
+    SysConfigObj.prototype.openPasswdWindow = function () {
+        document.getElementById('sysConfig.passwd').value = '';
+        document.getElementById('sysConfig.tip').innerHTML = '';
+        document.getElementById('sysConfig.passwdWindow').style.display = "block";
+        document.getElementById('sysConfig.passwd').focus();
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = 'sysConfig.passwdWindow'; //使得该层支持简单热键
+
+
+        maskAll.style.display = 'block';
+    }
+    SysConfigObj.prototype.openWindow = function () {
+        try {
+            document.getElementById('SysConfig.teachipbutton').focus();
+        } catch (e) {
+        }
+        //_mask.isVisible()是否可见， true 可见，false不可见
+        if (_mask.isVisible()) return;
+        _usbObj.invisible();
+
+        maskAll.style.display = 'block';
+        this.openPasswdWindow();
+        //document.getElementById('sysConfig.window').style.display="block" ;
+        //document.getElementById('sysConfig.ipbutton').focus();
+        //if(isAllowSimpleHotKey) _simpleHotKey.pid='sysConfig.window'; //使得该层支持简单热键
+    }
+
+    //_sysConfg.openSystemConfigWindow(); 打开系统设置窗口
+    SysConfigObj.prototype.openSystemConfigWindow = function () {
+        //alert("cc+");
+        //  alert(_tUtil.getWhiteBoardFlag());
+        maskAll.style.display = 'block';
+
+        document.getElementById('sysConfig.window').style.display = "block";
+        document.getElementById('sysConfig.teachToolConfigButton').focus();
+        //document.getElementById('sysConfig.ipbutton').focus();
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = 'sysConfig.window'; //使得该层支持简单热键
+
+        //旧版本不显示教学工具
+
+        //alert(_tUtil.getWhiteBoardFlag());
+        if (2 != _tUtil.getWhiteBoardFlag()) {
+
+            document.getElementById('sysConfig.teachToolConfigButton').style.display = "none";
+
+            document.getElementById('btnCss').className = "for1Btn"
+            //alert(document.getElementById('btnCss').className="space3");
+        } else {
+            // space4Btn
+            //alert();
+            document.getElementById('btnCss').className = "for2Btn"
+        }
+        document.getElementById('SysConfig.teachipbutton').focus();
+    }//end of function
+
+
+    SysConfigObj.prototype.closeWindow = function () {
+        _usbObj.visible();
+        void (document.getElementById('sysConfig.window').style.display = 'none');
+
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = null; //取消对该层简单热键支持
+
+        maskAll.style.display = 'none';
+
+    };
+
+
+</SCRIPT>
+
+<!--  XXXXXXXXXXXXXXXXXXXXXXX 教学工具 begin -->
+
+<div style="display: none;">
+    <OBJECT
+            CLASSID="clsid：B02201C9-1789-4FF0-B95F-C1A03D8B6B99"
+            ID=VCOMPlayer
+            Name=VCOMPlayer
+            WIDTH=0
+            HEIGHT=0
+    >
+    </OBJECT>
+</div>
+<SCRIPT language=javascript>
+
+    String.prototype.trim = function () {
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+    var _teachToolConfigObj = new TeachToolConfigObj();
+
+    function TeachToolConfigObj() {
+        this.length;
+        this.currType;//1-红河 2-其它
+        this.name0;
+        this.name1;
+        this.name2;
+        this.path0;
+        this.path1;
+        this.path2;
+
+    }//end of function
+     //_teachToolConfigObj.checkLen(this);检查长度
+    TeachToolConfigObj.prototype.checkLen = function (obj, len) {
+        obj.value = obj.value.trim();
+        if (undefined == len) len = 4
+        if (obj.value.length > len) {
+            obj.value = obj.value.substring(0, len);
+            _teachToolConfigObj.tip("工具名称最多4个字！");
+        } else {
+            _teachToolConfigObj.tip("");
+        }
+
+    };//end of function
+
+
+    //_teachToolConfigObj.selectFolder(0);
+    TeachToolConfigObj.prototype.selectFolder = function (index) {
+        var path = ocx.SelectPath("1");
+        //alert(path);
+        if ('' != path) {
+            document.getElementsByName("teachToolConfig_inputPanel_path")[index].value = path;
+        }
+    }//end of function
+
+
+    //_teachToolConfigObj.tip();
+    TeachToolConfigObj.prototype.tip = function (tip) {
+        if ('' == tip || undefined) {
+            document.getElementById('teachToolConfig.tip').className = "";
+            document.getElementById('teachToolConfig.tip').innerHTML = '';
+        } else {
+            document.getElementById('teachToolConfig.tip').className = "tipsInfo";
+            document.getElementById('teachToolConfig.tip').innerHTML = tip;
+        }
+    };
+    TeachToolConfigObj.prototype.openWindow = function () {
+
+        document.getElementById('teachToolConfig.configWindow').style.display = "block";
+        //loadIpConfig();
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = 'teachToolConfig.configWindow';
+
+        document.getElementById('teachToolConfig.tip').className = "";
+        document.getElementById('teachToolConfig.tip').innerHTML = '';
+
+        _teachToolConfigObj.load();
+        _teachToolConfigObj.selectType(_teachToolConfigObj.currType);
+    }
+    TeachToolConfigObj.prototype.closeWindow = function () {
+
+        void (document.getElementById('teachToolConfig.configWindow').style.display = 'none');
+        _sysConfg.openWindow();
+        // document.getElementById('netconfig.ipbutton').focus();
+
+    };
+
+    //_teachToolConfigObj.selectType();
+    TeachToolConfigObj.prototype.selectType = function (type) {
+        this.currType = type
+        if (1 == type) {//红河
+            document.getElementById('teachToolConfig.inputPanel').style.display = "none";
+        } else {
+            document.getElementById('teachToolConfig.inputPanel').style.display = "block";
+        }
+
+
+    };
+
+    //_teachToolConfigObj.save();
+    TeachToolConfigObj.prototype.save = function () {
+        var flag = _teachToolConfigObj.check();
+        //alert("flag"+flag);
+        if (!flag) {
+            return;
+        }
+        _teachToolConfigObj.tip("");
+        //第一个文件路径
+        //第二个是文件名
+        //D第三个是文件内容
+        //第四个为xml长度 如果你不知道长度就传入0
+
+        var xml = '<?xml version="1.0" encoding="UTF-8"?>';
+        xml += '<config><TeachToolConfigs>';
+        xml += '<currType>' + this.currType + '</currType>';
+        xml += '</TeachToolConfigs></config>';
+
+        //xml="123456789";
+        //var length=xml.length;
+        //alert(length);
+        var content = "teachToolConfigs.currType=" + this.currType + ";";
+        content += "teachToolConfigs.currType=" + this.currType + ";";
+
+        var names = document.getElementsByName("teachToolConfig_inputPanel_name");
+        var paths = document.getElementsByName("teachToolConfig_inputPanel_path");
+        //alert(names.length);
+        // alert(paths.length);
+        for (var i = 0; i < names.length; i++) {
+            // alert(names[i].value);
+            content += "teachToolConfigs.name" + i + "=" + names[i].value + ";";
+            content += "teachToolConfigs.path" + i + "=" + paths[i].value + ";";
+
+        }//end of for
+
+        var length = content.length;
+        try {
+            //VCOMPlayer.WriteInfo("c:","config.ini",content,length);
+            VCOMPlayer.WriteInfo("", "config.ini", content, 0);
+        } catch (e) {
+            alert("本地文件写入控件加载失败" + e);
+        }
+        //alert('finish');
+
+
+        // alert(readXml);
+
+        _teachToolConfigObj.tip("保存成功！");
+        top.location.reload();
+
+    };
+
+    TeachToolConfigObj.prototype.isNotEmpty = function (str) {
+        if (str.length > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    };
+    TeachToolConfigObj.prototype.isEmpty = function (str) {
+        if (str.length > 0) {
+            return false;
+
+        } else {
+            return true;
+        }
+    };
+    //_teachToolConfigObj.check();
+    TeachToolConfigObj.prototype.check = function () {
+        if (1 == _teachToolConfigObj.currType) {//1-红河 2-其它
+            //
+            if (_teachTools.isInstallHongHeTool()) {
+                return true;// this.currType;
+            } else {
+                _teachToolConfigObj.tip("请先安装鸿合白板！");
+                return false;
+
+            }
+        }//end of if
+
+        //默认设置为 其它
+        _teachToolConfigObj.currType = 2;
+
+
+        var names = document.getElementsByName("teachToolConfig_inputPanel_name");
+        var paths = document.getElementsByName("teachToolConfig_inputPanel_path");
+        //alert(names.length);
+        // alert(paths.length);
+        var hasValue = 0;
+        for (var i = 0; i < names.length; i++) {
+            if (this.isNotEmpty(paths[i].value)) {
+                hasValue++;
+            }
+            if (this.isNotEmpty(names[i].value)) {
+                //alert('fd');
+                hasValue++;
+            }
+        }//end of for
+        //alert(hasValue);
+        /*****
+         if(0==hasValue) {
+	  _teachToolConfigObj.tip("请输入教学工具配置");
+	  return false;
+	}***/
+        //alert(hasValue  +"hasValue%2="+ hasValue%2);
+        if (0 != (hasValue % 2)) {
+            _teachToolConfigObj.tip("请输入合法教学工具配置");
+            return false;
+        }
+
+
+        for (var i = 0; i < names.length; i++) {
+            if (this.isEmpty(names[i].value)) {
+                if (this.isNotEmpty(paths[i].value)) {
+                    return false;
+                }
+            }
+            if (this.isNotEmpty(names[i].value)) {
+                //alert('sb');
+                //alert('sb'+this.isEmpty(paths[i].value));
+                if (this.isEmpty(paths[i].value)) {
+                    return false;
+                }
+            }
+
+            _teachToolConfigObj.tip();
+
+        }//end of for
+
+        return true;
+
+    };
+    //_teachToolConfigObj.getCurrType();
+    TeachToolConfigObj.prototype.getCurrType = function () {
+
+        var config_str = "";
+        //config_str=VCOMPlayer.ReadInfo("c:","config.ini");
+        try {
+            config_str = VCOMPlayer.ReadInfo("", "config.ini");
+        } catch (e) {
+        }
+        // alert("config_str:"+config_str);
+
+        var configs = config_str.split(";");
+        for (var i = 0; i < configs.length; i++) {
+            // alert(configs[i]);
+            var config_pair = configs[i].split("=");
+            var name = config_pair[0];
+            //alert(name);
+            var value = config_pair[1];
+
+            //1-honghe 2,其它
+            if ("teachToolConfigs.currType" == name) {
+                _teachToolConfigObj.currType = value;
+                // alert("value:"+value);
+                return value;
+
+            }
+        }//end of for
+    };
+    //_teachToolConfigObj.load();
+    TeachToolConfigObj.prototype.load = function () {
+
+
+        var config_str = "";
+        //config_str=VCOMPlayer.ReadInfo("c:","config.ini");
+        try {
+            config_str = VCOMPlayer.ReadInfo("", "config.ini");
+        } catch (e) {
+        }
+        //alert(config_str);
+
+        var configs = config_str.split(";");
+        for (var i = 0; i < configs.length; i++) {
+            // alert(configs[i]);
+            var config_pair = configs[i].split("=");
+            var name = config_pair[0];
+            //alert(name);
+            var value = config_pair[1];
+
+            //1-honghe 2,其它
+            if ("teachToolConfigs.currType" == name) {
+                _teachToolConfigObj.currType = value;
+
+                // alert(1==value);
+                if (1 == value)
+                    document.getElementsByName("toolType")[0].checked = "checked";
+                else
+                    document.getElementsByName("toolType")[1].checked = "checked";
+                // alert("teachToolConfigs.currType="+value);
+            }
+
+            //
+            if ("teachToolConfigs.name0" == name) {
+                //  alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_name")[0].value = value;
+
+            } else if ("teachToolConfigs.path0" == name) {
+                // alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_path")[0].value = value;
+
+            }
+            //
+            if ("teachToolConfigs.name1" == name) {
+                //  alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_name")[1].value = value;
+
+            } else if ("teachToolConfigs.path1" == name) {
+                // alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_path")[1].value = value;
+
+            }
+            //
+            if ("teachToolConfigs.name2" == name) {
+                //  alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_name")[2].value = value;
+
+            } else if ("teachToolConfigs.path2" == name) {
+                // alert(value);
+                document.getElementsByName("teachToolConfig_inputPanel_path")[2].value = value;
+
+            }
+
+            // var names=document.getElementsByName("teachToolConfig_inputPanel_name");
+            // var paths=document.getElementsByName("teachToolConfig_inputPanel_path");
+
+        }//end of for
+
+    };
+    //_teachToolConfigObj.load();
+    TeachToolConfigObj.prototype.init = function () {
+
+
+        var config_str = "";
+        //config_str=VCOMPlayer.ReadInfo("c:","config.ini");
+        try {
+            config_str = VCOMPlayer.ReadInfo("", "config.ini");
+        } catch (e) {
+        }
+        //alert(config_str);
+
+        var configs = config_str.split(";");
+        for (var i = 0; i < configs.length; i++) {
+            // alert(configs[i]);
+            var config_pair = configs[i].split("=");
+            var name = config_pair[0];
+            //alert(name);
+            var value = config_pair[1];
+
+
+            _teachToolConfigObj.length = 0;
+            //1-honghe 2,其它
+            if ("teachToolConfigs.currType" == name) {
+                _teachToolConfigObj.currType = value;
+
+            }
+
+            //
+            if ("teachToolConfigs.name0" == name) {
+                if (value.length > 0) _teachToolConfigObj.length++;
+                _teachToolConfigObj.name0 = value;
+            } else if ("teachToolConfigs.path0" == name) {
+                _teachToolConfigObj.path0 = value;
+
+            }
+            //
+            if ("teachToolConfigs.name1" == name) {
+                if (value.length > 0) _teachToolConfigObj.length++;
+                _teachToolConfigObj.name1 = value;
+
+            } else if ("teachToolConfigs.path1" == name) {
+                _teachToolConfigObj.path1 = value;
+            }
+            //
+            if ("teachToolConfigs.name2" == name) {
+                if (value.length > 0) _teachToolConfigObj.length++;
+                _teachToolConfigObj.name2 = value;
+            } else if ("teachToolConfigs.path2" == name) {
+                _teachToolConfigObj.path2 = value;
+            }
+
+            // var names=document.getElementsByName("teachToolConfig_inputPanel_name");
+            // var paths=document.getElementsByName("teachToolConfig_inputPanel_path");
+
+        }//end of for
+
+    };
+
+
+    //打开教学工具
+    TeachToolConfigObj.prototype.openExe = function (index) {
+        //alert("index="+index );
+        if (0 == index) {
+            url = _teachToolConfigObj.path0;
+        } else if (1 == index) {
+            url = _teachToolConfigObj.path1;
+        } else if (2 == index) {
+            url = _teachToolConfigObj.path2;
+        } else {
+            alert("打开教学工具出错" + index);
+            return;
+        }
+
+        _teachTools.openExe(url);
+
+    };
+    //_teachToolConfigObj.load();
+
+
+</SCRIPT>
+
+
+<form action="" name="ipform">
+    <div id="teachToolConfig.configWindow" class="floatDiv" style="display: none;">
+
+        <div class="divTop">
+            <div class="divClose" onclick="_teachToolConfigObj.closeWindow();"></div>
+            <div class="divTitle">
+                教学工具配置
+            </div>
+            <div class="divContent">
+                <h4>
+                    <label>
+                        <input type="radio" id="teachToolConfig.honghe" name="toolType" value="1"
+                               onfocus="javascript:_teachToolConfigObj.selectType(this.value);"/>
+                        鸿合
+                    </label>
+
+                    <br/>
+
+                    <label>
+                        <input type="radio" id="teachToolConfig.other" name="toolType" value="2"
+                               onfocus="javascript:_teachToolConfigObj.selectType(this.value);" checked="checked"/>
+                        其它
+                    </label>
+                </h4>
+                <dl class="ipSet" id="teachToolConfig.inputPanel">
+                    <dt>
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);"
+                        />
+                    </dt>
+                    <dd>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a
+                                href="javascript:_teachToolConfigObj.selectFolder(0); ">选 择</a>
+                    </dd>
+                    <dt>
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);"
+                        />
+                    </dt>
+                    <dd>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a
+                                href="javascript:_teachToolConfigObj.selectFolder(1); ">选 择</a>
+                    </dd>
+                    <dt>
+                        名称：<input type="text" " name="teachToolConfig_inputPanel_name" style="width:90px;"
+                        onblur="_teachToolConfigObj.checkLen(this);"
+                        />
+                    </dt>
+                    <dd>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;路径：
+                        <input type="text" name="teachToolConfig_inputPanel_path" style="width:160px;"/>
+                        <a
+                                href="javascript:_teachToolConfigObj.selectFolder(2); ">选 择</a>
+                    </dd>
+
+
+                </dl>
+
+
+                <span class="clearfix"></span>
+
+            </div>
+            <span class="clearfix"></span>
+            <!-- 提示信息 -->
+            <div class="" id="teachToolConfig.tip">
+            </div>
+            <div class="page marR2">
+
+                <div class="pageNext">
+                    <a href="javascript:_teachToolConfigObj.closeWindow();">返 回</a>
+                </div>
+                <div class="pageNext">
+
+                    <a href="#" onclick="_teachToolConfigObj.save();;"
+                       id="teachToolConfig.confirm">确 定</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divBottom"></div>
+    </div>
+</form>
+
+
+<!--  XXXXXXXXXXXXXXXXXXXXXXX 教学工具 end -->
+
+
+<!-- XXXXXXXXX  授课IP设置 begin -->
+
+
+<div style="display: none;">
+    <OBJECT ID="ipActiveX" WIDTH=350 HEIGHT=50
+            CLASSID="CLSID:f7f17642-76a0-4824-97dc-bb623582c998">
+        <PARAM NAME="_Version" VALUE="65536">
+        <PARAM NAME="_ExtentX" VALUE="2646">
+        <PARAM NAME="_ExtentY" VALUE="1323">
+        <PARAM NAME="_StockProps" VALUE="0">
+    </OBJECT>
+</div>
+
+<div id="net.teachUrlConfigWindow" class="floatDiv"
+     style="display: none;">
+
+
+    <div class="divTop">
+        <div class="divClose" onclick="new TeachUrlConfigObj().closeWindow();"></div>
+        <div class="divTitle">
+            授课IP设置！
+        </div>
+        <div class="divContent">
+            <h3>
+                班班通授课系统IP地址设置
+            </h3>
+            <dl class="ipSet2">
+
+
+                <dt>
+                    校级授课地址：
+                </dt>
+                <dd>
+                    <input type="text" id="school_url" style="width: 350px;"/>
+                </dd>
+                <dt>
+                    市级授课地址：
+                </dt>
+                <dd>
+                    <input type="text" id="city_url" value="" style="width: 350px;"/>
+
+                </dd>
+
+
+            </dl>
+
+
+            <span class="clearfix"></span>
+            <div class="tipsInfo">
+                网络版本示例如下：http://192.168.15.138:80/teach<br/>
+                单机版本示例如下：http://127.0.0.1:8080/teach
+            </div>
+            <br>
+            <!-- 提示信息 -->
+            <div class="" id="teachUrlConfig.tip">
+            </div>
+
+            <div class="page marR2">
+
+                <div class="pageNext">
+                    <a href="javascript:new TeachUrlConfigObj().closeWindow();">返 回</a>
+                </div>
+                <div class="pageNext">
+                    <a onclick="_tuConfig.setURL();" href="#">确 定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divBottom" style="height: 50px;"></div>
+
+</div>
+
+
+<SCRIPT LANGUAGE="JavaScript">
+    var _tuConfig = new TeachUrlConfigObj();
+
+    function TeachUrlConfigObj() {
+    }
+
+    //_tuConfig.tip();
+    TeachUrlConfigObj.prototype.tip = function (tip) {
+        document.getElementById('teachUrlConfig.tip').className = "tipsInfo";
+        document.getElementById('teachUrlConfig.tip').innerHTML = tip;
+
+    }
+    TeachUrlConfigObj.prototype.openWindow = function (flag) {
+
+        document.getElementById('net.teachUrlConfigWindow').style.display = "block";
+        document.getElementById('school_url').focus();
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = 'net.teachUrlConfigWindow';
+
+        //清楚提示信息
+        document.getElementById('teachUrlConfig.tip').style.display = "none";
+        document.getElementById('teachUrlConfig.tip').className = "";
+        document.getElementById('teachUrlConfig.tip').innerHTML = '';
+        this.load();
+
+        this.clearTip();
+
+    }
+    TeachUrlConfigObj.prototype.closeWindow = function () {
+        void (document.getElementById('net.teachUrlConfigWindow').style.display = 'none');
+        //document.getElementById("netconfig.teachipbutton").focus();
+        _sysConfg.openWindow();
+    };
+    TeachUrlConfigObj.prototype.load = function () {
+        var eFlag = false;
+        var url;
+        var url2;
+        var config_str;
+        try {
+            config_str = config_str = VCOMPlayer.ReadInfo("", "showkeip.ini");
+            if ('-1' == config_str) eFlag = true;
+        } catch (e) {
+            //alert(eFlag);
+            eFlag = true;
+        }
+        try {
+            //alert(config_str);
+            if (config_str.length <= 1) {
+                //alert(config_str.length);
+                eFlag = true;
+            } else {
+                var configs = config_str.split(";");
+                for (var i = 0; i < configs.length; i++) {
+                    // alert(configs[i]);
+                    var config_pair = configs[i].split("=");
+                    var name = config_pair[0];
+                    //alert(name);
+                    var value = config_pair[1];
+
+                    if ("showke.school_url" == name) {
+                        //  alert(value);
+                        //school_url=value;
+                        url = value;
+
+                    } else if ("showke.city_url" == name) {
+                        url2 = value;
+
+                    }
+                }//end of for
+            }
+        } catch (e) {
+
+        }
+        //alert("url="+url+"  url2="+url2);
+        //alert(eFlag);
+        //eFlag=true;
+        if (eFlag) {
+            try {
+                url = document.getElementById("mac_ocx").GetKeyPath("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\URL");
+                //alert(url);
+                url2 = document.getElementById("mac_ocx").GetKeyPath("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\URL2");
+                // alert(url2);
+            } catch (e) {
+                window.status = '授课IP控件有误！！';
+                alert('授课IP控件有误！');
+                //return whiteBoardFlag;
+            }
+        }
+        document.getElementById('city_url').value = url2;
+        //document.getElementById('city_urlaa').value=url;
+        document.getElementById('school_url').value = url;
+        //alert(document.getElementById('city_url').value+"=url");
+    };
+    //
+    TeachUrlConfigObj.prototype.tip = function (str) {
+        //清楚提示信息
+        document.getElementById('teachUrlConfig.tip').style.display = "";
+        document.getElementById('teachUrlConfig.tip').className = "tipsInfo";
+        document.getElementById('teachUrlConfig.tip').innerHTML = str;
+    }
+    TeachUrlConfigObj.prototype.clearTip = function () {
+        //清楚提示信息
+        document.getElementById('teachUrlConfig.tip').style.display = "none";
+        document.getElementById('teachUrlConfig.tip').className = "";
+        document.getElementById('teachUrlConfig.tip').innerHTML = '';
+    }
+    TeachUrlConfigObj.prototype.isURL = function (str) {
+        if (str.startWith("http://")) return true;
+        return false;
+    }
+
+    TeachUrlConfigObj.prototype.setURL = function () {
+        var city_url = document.getElementById('city_url').value;
+        var school_url = document.getElementById('school_url').value;
+        if (!this.isURL(city_url)) {
+            this.tip("市级授课地址输入不合法！");
+            return;
+        }
+        if (!this.isURL(school_url)) {
+            this.tip("校授课地址输入不合法！");
+            return;
+        }
+
+
+        //保存到注册表中
+        try {
+            var url = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\URL=";
+            url += school_url;
+            var url2 = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\URL2=";
+            url2 += city_url;
+            //alert(url);
+            var ipConfigStr = document.getElementById("ipActiveX").SetGetwayArddress(url);
+            var ipConfigStr2 = document.getElementById("ipActiveX").SetGetwayArddress(url2);
+            /*if((ipConfigStr.toUpperCase()=="OK")&&(ipConfigStr2.toUpperCase()=="OK")){
+                 this.clearTip();
+                 if(confirm("授课IP设置成功，需要重启客户端！")){
+                     _common.exitSystem();
+                 }
+            } else if(ipConfigStr.toUpperCase()=="NO"){
+                       alert("授课IP设置失败！");
+            } **/
+        } catch (e) {
+
+        }//end of try-catch
+        //保存到本地配置文件
+        try {
+            var content = "";
+
+            content += "showke.school_url=" + school_url + ";";
+            content += "showke.city_url=" + city_url + ";";
+
+            VCOMPlayer.WriteInfo("", "showkeip.ini", content, 0);
+
+        } catch (e) {
+
+        }//end of try-catch
+
+        if (confirm("授课IP设置成功，需要重启系统！")) {
+            _common.exitSystem();
+        }
+
+
+    }//end of function;
+
+
+</SCRIPT>
+<!-- XXXXXXXXX  授课IP设置 end -->
+
+<!-- 模板设置 -->
+<!--模板设置-开始-->
+<DIV id=template.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_tUtil.closeWindow();></DIV>
+        <DIV class=divTitle>
+            模板设置！
+        </DIV>
+        <DIV class=divContent>
+            <H3>
+                请您选择所需模板
+            </H3>
+            <IMG src="images/selectImg.png">
+            <UL class=divButton>
+                <LI class=space1>
+                    <A id=template.board
+                       href="javascript:_tUtil.saveTemplateInfo('1');">电子白板</A>
+                </LI>
+                <LI class=spaceTV>
+                    <A id=template.tv href="javascript:_tUtil.saveTemplateInfo('2');">电视机</A>
+                </LI>
+            </UL>
+        </DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--模板设置-结束-->
+<SCRIPT language=JavaScript>
+    TemplateUtilObj.prototype.openWindow = function () {
+
+        document.getElementById('template.window').style.display = "block";
+        /*************/
+        if (1 == this.templateId)
+            document.getElementById('template.board').focus();
+        else
+            document.getElementById('template.tv').focus();
+
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = 'template.window'; //使得该层支持简单热键
+    }
+    TemplateUtilObj.prototype.closeWindow = function () {
+
+        document.getElementById('template.window').style.display = "none";
+
+        if (isAllowSimpleHotKey) _simpleHotKey.pid = "sysConfig.window"; //
+
+        _sysConfg.openWindow();
+
+    };
+
+
+    TemplateUtilObj.prototype.saveTemplateInfo = function (templateId) {
+
+        if (_macUtil.isReady()) {
+            var url = _common.getCurrServerPath() + '/loginLog/AccessQueLog.do?1=1';
+
+            url += '&current.c1=2';//获取模板信息
+            url += '&ajaxdate=' + new Date();
+
+            var url = _common.getCurrServerPath() + '/loginLog/externalAccessAddLog.do?1=1';
+            url += '&current.mac=' + _macUtil.getMACAdd();//mac地址
+            url += '&current.c1=2';//获取模板信息
+            url += '&current.templateId=' + templateId;//保存模板信息
+
+
+            //设置主备课地址
+            if ('error' != getMainTeachSeverPath()) {
+                //alert();
+                url += '&current.ip=' + getMainTeachSeverPath();//传送主备课ip地址
+            }
+            url += '&ajaxdate=' + new Date();
+            //prompt('',url);
+            //alert();
+            sendRequest(null, url);
+
+
+            //
+            url = '';
+            url += _common.getCurrServerPath() + "/newteach/index.do?userSetFlag=1&templateId=" + templateId;
+            url += '&cssName=' + _common.getCssName();
+            url += '&whiteBoardFlag=' + _tUtil.getWhiteBoardFlag();
+            try {
+                var currVersionid = _vsp.currKsId;
+                url += '&currVersionid=' + _vsp.currKsId;
+
+                //location.href=_common.getCurrServerPath()+"/newteach/index.do?userSetFlag=1&templateId="+templateId+'&currVersionid='+_vsp.currKsId+'&cssName='+ _common.getCssName();
+                location.href = url;
+            } catch (e) {
+
+                //location.href=_common.getCurrServerPath()+"/newteach/index.do?userSetFlag=1&templateId="+templateId+'&cssName='+ _common.getCssName();
+                location.href = url;
+            }
+
+
+            //alert();
+        }
+    }
+</SCRIPT>
+<!-- 获取mac地址的控件 end -->
+<!-- USB设备 begin
+<OBJECT CLASSID="clsid:B4490376-83CE-4dc9-ADD4-05287993DDE6"
+                ID=usb_ocx Name=usb_ocx WIDTH=250 HEIGHT=250></OBJECT>-->
+<!-- USB设备 end-->
+<!--USB设备-开始-->
+<DIV id=usb.window class=floatDiv>
+    <DIV class=divTop>
+        <DIV class=divClose onclick=_usbObj.closeUSBWindow();></DIV>
+        <DIV class=divTitle>
+            U盘资源！
+        </DIV>
+        <DIV id=usb.ocx class=divContent></DIV>
+    </DIV>
+    <DIV class=divBottom></DIV>
+</DIV>
+<!--USB设备-结束-->
+<SCRIPT type=text/javascript>
+
+    //创建usb展示页面
+    var _usbObj = new USBObj();
+
+    function USBObj() {
+        this.ocxId = "usb_ocx";
+        this.divid = "usb.window";
+    }
+
+    //_usbObj.closeUSBWindow();
+    USBObj.prototype.closeUSBWindow = function () {
+        $("#usb\\.ocx").hide();
+        //document.getElementById("usb.ocx").innerHTML="";
+        document.getElementById(this.divid).style.display = "none";
+        if (_mask.isVisible()) _mask.closeMask();//关闭遮罩层
+    }
+    USBObj.prototype.openUSBWindow = function (width, height) {
+        if ($("#usb\\.ocx").html() == "") {
+            $("#usb\\.ocx").html(this.createUSBHtml(width, height))
+        } else {
+            $("#usb\\.ocx").show();
+        }
+        //document.getElementById("usb.ocx").innerHTML=this.createUSBHtml(width,height);
+
+        if (!_mask.isVisible()) _mask.openMask();//打开遮罩层
+
+        document.getElementById(this.divid).style.display = "block";
+    }
+    USBObj.prototype.openUSBPage = function (width, height) {
+        _pMain.getMain().innerHTML = this.createUSBHtml(width, height);
+    }
+    USBObj.prototype.createUSBHtml = function (width, height) {
+        if (undefined == width)
+            width = 996;
+        if (undefined == height)
+            height = 554;
+        //alert(width);
+        //_pMain.getMain().innerHTML='<iframe id="dddd" name="ifrname" width="100%" height="2180px"></iframe>';
+        var h = '';
+        // h+='<div class="Upan">';
+
+
+        //<OBJECT  CLASSID = "clsid:B4490376-83CE-4dc9-ADD4-05287993DDE6" ID = usb_ocx Name = usb_ocx WIDTH =250 HEIGHT =250></OBJECT>
+        h += '<OBJECT            ';
+        h += '   CLASSID = "clsid:B4490376-83CE-4dc9-ADD4-05287993DDE6"';
+        h += '   ID = usb_ocx';
+        h += '   Name = usb_ocx';
+        h += '   WIDTH =' + width;
+        h += '   HEIGHT =' + height;
+        h += '>';
+        h += '</OBJECT> ';
+
+        return h;
+
+    };
+    //不可见 _usbObj.invisible();
+    USBObj.prototype.invisible = function () {
+
+        if (null != document.getElementById(this.ocxId))
+            document.getElementById(this.ocxId).style.display = "none";
+
+
+    };
+    //可见，
+    USBObj.prototype.visible = function () {
+
+        if (null != document.getElementById(this.ocxId))
+            document.getElementById(this.ocxId).style.display = "";
+    };
+
+
+</SCRIPT>
+
+<DIV
+        style="POSITION: absolute; DISPLAY: none; TOP: 0px; CURSOR: hand; LEFT: 0px"
+        id=del_icon onclick=" _loginObj.delHistoryUser();">
+    <IMG id=del_icon_img src="images/del.gif">
+</DIV>
+<DIV class=toplogo></DIV>
+<DIV class="bottomlogo bottomlogo2"></DIV>
+<SCRIPT type=text/javascript>
+    <!--
+    //alert('tongyong');
+
+
+    setMainTeachSeverPath('null');
+    //setMainTeachSeverPath('192.168.15.138:8080/pls');
+    _common.setCurrServerPath('');
+    _common.setCssName('tongyong');
+
+
+    //最多显示的用户个数 _loginObj.maxAccounts
+    _loginObj.maxAccounts = 10;
+
+
+    _loginObj.getHistoryUser();
+    var templateId = "1";//模板id
+    _tUtil.templateId = "1";//模板id
+    document.onselectstart = function () {
+        return false;
+    }
+
+    document.onkeydown = tokeyDown;
+
+    function tokeyDown(e) {
+        var keyval = event.keyCode;
+        if (keyval == 8) {
+            if (document.activeElement) {
+                if (document.activeElement.tagName != "INPUT") {
+                    return false;//如果按后退键， 暂时屏蔽掉
+                }
+            }
+        }
+    }
+
+    document.onmouseover = function () {
+//alert(event.srcElement.id);
+        var obj = event.srcElement;
+
+        if (obj.name != 'history_user' && obj.id != 'del_icon' && obj.id != 'del_icon_img') {
+            _loginObj.hideDelButton();
+        }
+        // return false;
+    };
+
+
+    //-->
+</SCRIPT>
+
+<script type="text/javascript">
+    var _footTools = new FootTools();
+
+    //
+    function FootTools() {
+    }
+
+    //_footTools.clearImgCache();
+    FootTools.prototype.clearImgCache = function () {
+        var stauts = 0;
+        try {
+            // 新建
+            if (IInformationOcx.IsEnvironmentStart() == 1) {
+                if (window.confirm("确定要清除板书记录？")) {
+                    stauts = 1;
+                    IInformationOcx.FileNew(true);
+                }
+            } else {
+                alert("请先启动白板工具！");
+            }
+
+        } catch (e) {
+            try {
+                if (stauts == 0) {
+                    if (window.confirm("确定要清除板书记录？")) {
+                        IInformationOcx.FileNew(true);
+                    }
+                } else {
+                    alert("清除记录出错！");
+                }
+            } catch (ee) {
+                alert("清除记录出错！");
+            }
+        }
+    }
+    FootTools.prototype.toolposition = function () {
+        if (1 == _tUtil.getWhiteBoardFlag()) {
+            try {
+                IInformationOcx.DeviceLocate();
+            } catch (e) {
+            }
+        } else if (3 == whiteBoardFlag) {
+            try {
+                var urlbook = document.getElementById("mac_ocx").GetKeyPath("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\urlbook");
+                var ret = ocx.playFile(urlbook.substring(0, urlbook.lastIndexOf("\\") + 1) + "SetPoint.EXE");
+                switch (ret) {
+                    case -1:
+                        alert("启动失败!");
+                        break;
+                    case -2:
+                        alert("启动失败!");
+                        break;
+                    case -3:
+                        alert("启动失败!");
+                        break;
+                }
+            } catch (e) {
+            }
+        }
+    }
+
+    var whiteBoardFlag = 2;
+    FootTools.prototype.initBtn = function () {
+
+        // alert();
+        var urledu = "";
+        var urlbook = "";
+        try {
+            urlbook = document.getElementById("mac_ocx").GetKeyPath("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\urlbook");
+            //alert(urlbook);
+            urledu = document.getElementById("mac_ocx").GetKeyPath("HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\VCOMIE\\urledu");
+            //alert(whiteBoardPath.length);
+        } catch (e) {
+            window.status = '获得电子白板类型失败！';
+            alert('获得电子白板类型失败！');
+            //return whiteBoardFlag;
+        }
+        // alert();
+        if (urlbook.length > 0 && urledu.length > 0) {
+            if (urlbook == urledu) whiteBoardFlag = 1;
+            else whiteBoardFlag = 3;
+
+        } else {
+            whiteBoardFlag = 2;//2-都不显示 1-显示教学工具 3-显示两个
+        }
+        //alert(' whiteBoardFlag='+whiteBoardFlag);
+        //
+        //whiteBoardFlag=3;
+        if (2 == whiteBoardFlag) {//注册表没有仅显示软键盘
+            _teachToolConfigObj.init();
+            if (2 == _teachToolConfigObj.currType) {
+
+                var c = 0;
+                if (_teachToolConfigObj.name0.length > 0) {
+                    document.getElementById("teachToolConfigs.name0").style.display = '';
+                    document.getElementById("teachToolConfigs.name0_id").innerHTML = _teachToolConfigObj.name0;
+                    c++;
+                }
+                if (_teachToolConfigObj.name1.length > 0) {
+                    document.getElementById("teachToolConfigs.name1").style.display = '';
+                    document.getElementById("teachToolConfigs.name1_id").innerHTML = _teachToolConfigObj.name1;
+                    c++;
+                }
+                if (_teachToolConfigObj.name2.length > 0) {
+                    document.getElementById("teachToolConfigs.name2").style.display = '';
+                    document.getElementById("teachToolConfigs.name2_id").innerHTML = _teachToolConfigObj.name2;
+                    c++;
+                }
+
+                if (0 == c) {//显示软键盘
+                    document.getElementById("tools.softkeyborard").style.display = '';
+                    document.getElementById("tools.softkeyborard_float").style.display = '';
+                    if (document.body.clientWidth > 1100) {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 200;
+                        document.getElementById("tools.softkeyborard_float").style.paddingLeft = document.body.clientWidth / 2 - 500;
+                    } else {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 210;
+                    }//end of if-else if -else
+
+
+                } else if (c == 3) {
+                    //alert("5个按钮");
+                    document.getElementById("tools.usb").className = 'usbSpace4';
+                    if (document.body.clientWidth > 1100) {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 300;
+                    } else {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 320;
+                    }//end of if-else if -else
+                } else if (c == 2) {
+
+                    //alert("4个按钮");
+                    document.getElementById("tools.usb").className = 'usbSpace4';
+                    if (document.body.clientWidth > 1100) {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 200;
+                    } else {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 230;
+                    }//end of if-else if -else
+                } else {
+                    if (document.body.clientWidth > 1100) {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 200;
+                    } else {
+                        document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 210;
+                    }//end of if-else if -else
+                }
+                //alert(c);usbSpace3
+                // document.getElementById("tools.usb").className='usbSpace2';
+            } else if (1 == _teachToolConfigObj.currType) {//红河
+                document.getElementById("tools.usb").className = 'usbSpace3';
+
+                document.getElementById("tools.teach").style.display = 'none';
+                document.getElementById("tools.whiteBoard").style.display = 'none';
+                //
+                document.getElementById("tools.softkeyborard").style.display = '';
+                document.getElementById("tools.softkeyborard_float").style.display = '';
+                if (document.body.clientWidth > 1100) {
+                    document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 200;
+                    document.getElementById("tools.softkeyborard_float").style.paddingLeft = document.body.clientWidth / 2 - 500;
+                } else
+                    document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 210;
+
+
+            } else {
+                // alert();
+                //显示软键盘
+                document.getElementById("tools.softkeyborard").style.display = '';
+                document.getElementById("tools.softkeyborard_float").style.display = '';
+                if (document.body.clientWidth > 1100) {
+                    document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 200;
+                    document.getElementById("tools.softkeyborard_float").style.paddingLeft = document.body.clientWidth / 2 - 500;
+                } else {
+                    document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 210;
+                }//end of if-else if -else
+            }//end of if-else if -else
+
+        } else if (1 == whiteBoardFlag) {
+            //urlbook、edubook都存在且相同 ，则显示白板工具、清除记录；
+            document.getElementById("tools.usb").className = 'usbSpace4';
+
+            document.getElementById("newTool").style.display = "";
+            document.getElementById("clearImgCache").style.display = "";
+            document.getElementById("toolposition").style.display = "";
+            //隐藏软键盘按钮
+            document.getElementById("tools.softkeyborard").style.display = 'none';
+            document.getElementById("tools.softkeyborard_float").style.display = 'none';
+            document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 320;
+        } else if (3 == whiteBoardFlag) {//显示2个
+            //urlbook、edubook都存在且不相同 ，则显示教学工具、板书工具；
+            document.getElementById("tools.usb").className = 'usbSpace4';
+
+            //
+            document.getElementById("tools.teach").style.display = '';
+            document.getElementById("tools.whiteBoard").style.display = '';
+            document.getElementById("toolposition").style.display = "";
+            //隐藏软键盘按钮
+            document.getElementById("tools.softkeyborard").style.display = 'none';
+            document.getElementById("tools.softkeyborard_float").style.display = 'none';
+            document.getElementById("indexTools").style.paddingLeft = document.body.clientWidth / 2 - 320;
+            //
+        }
+        _tUtil.whiteBoardFlag = whiteBoardFlag;
+    }//end of initBtn
+
+    _footTools.initBtn();
+    versionshow.innerHTML = "当前客户端版本：V" + loadversionxml();
+    var defaultcssname = "jzzzq";
+</SCRIPT>
+</BODY>
+</HTML>

@@ -1,0 +1,864 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.containers {
+    width: 100%;
+    height: 100%;
+}
+
+.edibox {
+    margin: 0;
+    font-family: "microsoft yahei";
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.edibox sub, .edibox sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.edibox sup {
+    top: -.5em;
+}
+
+.edibox sub {
+    bottom: -.25em;
+}
+
+/*.edibox a,.edibox a:active,.edibox a:visited { text-decoration: none; color: #333; }*/
+.edibox a:hover {
+    text-decoration: none;
+}
+
+.edibox label {
+    display: block;
+}
+
+.edibox ul, .edibox li {
+    list-style: none;
+}
+
+.edibox input, img, .edibox select, .edibox button {
+    vertical-align: middle;
+    border: none;
+}
+
+.edibox .table {
+    display: table;
+    table-layout: fixed;
+}
+
+.edibox .table > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.edibox .w100 {
+    width: 100px;
+}
+
+.edibox .w150 {
+    width: 150px;
+}
+
+.edibox .wt100 {
+    width: 100%;
+}
+
+.edibox .w60 {
+    width: 60px;
+}
+
+.edibox .pad10 {
+    padding: 10px;
+}
+
+.edibox .pad5 {
+    padding: 5px;
+}
+
+.edibox .pad0-10 {
+    padding: 0 10px;
+}
+
+.edibox .pad0-25 {
+    padding: 0 25px;
+}
+
+.edibox .pad10-0 {
+    padding: 10px 0;
+}
+
+.posR {
+    position: relative;
+}
+
+.edibox .fr {
+    float: right;
+}
+
+.edibox .fl {
+    float: left;
+}
+
+.edibox ul.fen5 li {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.edibox .blur { /*  婵犵數濮烽弫鍛婃叏閻戝鈧倿鎸婃竟鈺嬬秮瀹曘劑寮堕幋婵堚偓顓㈡⒑娴兼瑧鍒伴柡鍫墴閿濈偤寮撮姀锛勫幐闂佹悶鍎弲娑欑墡闂備胶枪缁绘垹鍒掗幘璇茶摕闁靛ň鏅涢崡鎶芥煟閹邦厾銈撮柛瀣崌瀹曨偊濡烽敃鈧崢褰掓⒑闁偛鑻晶顖滅磼缂佹绠為柟顔荤矙濡啫霉闊彃鐏查柡灞剧⊕缁绘繈宕ㄩ鐐村劒缂傚倷绶￠崳顖滅礊娓氣偓楠炲啫鈻庨幘鏉戔偓缁樹繆椤栨粌甯剁€殿喛娅曠换婵嬫偨闂堟稐娌梺鎼炲姀閸╂牠鎮樺▎鎾寸厽閹兼番鍨婚。鎻掝熆閻熺増顥㈡鐐差樀楠炴牗鎷呴崫銉╃崜闂備礁婀辨灙濡ょ姵鎮傚鎼佹偐缂佹ê鈧敻鎮峰▎蹇擃仾缂佲偓閸愵喗鐓曢柡鍐ｅ亾闁荤啿鏅犻悰顔界節閸屾鏂€闁诲函缍嗘禍鐐搭殽閸ヮ剚鐓熼柣妯哄帠閼割亪鏌涢弬璺ㄐｆい銊︾懇濮婂宕掑顑藉亾閻戣姤鍊块柨鏇炲€哥粻鏍煕椤愶絾绀€缁炬儳鐏濋埞鎴︽偐鐎圭姴顥濈紓浣哄閸ㄥ爼寮婚妸鈺傚亞闁稿本绋戦锟�0~Npx闂傚倸鍊搁崐鎼佸磹閻戣姤鍊块柨鏃堟暜閸嬫挾绮☉妯绘悙缂佲偓閸愩劉鏀介柣妯虹枃婢规绱掗悪鈧崹鍫曞蓟閵娾晜鍋嗛柛灞剧☉椤忥拷0濠电姷鏁告慨鐑藉极閹间礁纾婚柣鎰惈閸ㄥ倿鏌涢锝嗙缂佺姵婢樿灃闁挎繂鎳庨弳娆戠棯閹勫仴闁哄本娲熷畷鐓庘攽閸パ勬珶婵犵數鍋為崹顖炲垂閻熺増绾繝鐢靛О閸ㄧ厧鈻斿☉銏℃櫇闁靛鏅滈崐鍨亜閹烘垵顏柍閿嬪灴閺屾盯骞橀弶鎴犵シ婵炲瓨绮庨崑銈夊蓟濞戙垺鍋愰柧蹇ｅ亜闂夊秶绱撴担绋库偓鍝ョ矓瑜版帒鏋侀柟鍓х帛閺呮悂鏌ㄩ悤鍌涘     */
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transition: 1.0s filter;
+}
+
+.edibox .bgNew {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../images/ktjx/bgbg.png);
+    z-index: 2;
+    display: none;
+}
+
+/*text*/
+.edibox h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.edibox h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.edibox h5 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.edibox h6 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.edibox .text-in2 {
+    text-indent: 2em;
+}
+
+.edibox .text-inportant {
+    font-size: 1.1em;
+    color: #222;
+}
+
+.edibox .jieduan {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edibox .tb-fen2 span {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: #999;
+}
+
+.edibox .tb-fen2 span > i {
+    margin-right: 5px;
+}
+
+.edibox .jieduan-db {
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    height: 32px;
+    padding: 5px 5px 5px 10px;
+    word-break: break-word;
+}
+
+/*icon*/
+.edibox .icon {
+    display: block;
+    background: url(../images/ktjx/ico.png);
+}
+
+.edibox .icon-yj {
+    width: 235px;
+    height: 75px;
+    background-position: 0 -10px;
+}
+
+.edibox .iconY {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 45px;
+    height: 45px;
+}
+
+.edibox .iconY.yy {
+    background-position: -20px -143px;
+}
+
+.edibox .iconY.xk {
+    background-position: -70px -143px;
+}
+
+.edibox .iconY.gb {
+    background-position: -185px -143px;
+}
+
+.edibox .iconY.gj {
+    background-position: -130px -143px;
+}
+
+.edibox .iconsm {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 20px;
+    height: 20px;
+}
+
+.edibox .iconsm.doc {
+    background-position: -25px -201px;
+}
+
+.edibox .iconsm.hot {
+    background-position: -53px -201px;
+}
+
+.edibox .iconsm.time {
+    background-position: -83px -201px;
+}
+
+.edibox .iconsm.dif {
+    background-position: -169px -201px;
+}
+
+.edibox .iconsm.num {
+    background-position: -112px -201px;
+}
+
+.edibox .icont {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 45px;
+    height: 45px;
+}
+
+.edibox .icont.kqyx {
+    background-position: -17px -88px;
+}
+
+.edibox .icont.ktjx {
+    background-position: -74px -88px;
+}
+
+.edibox .icont.khzy {
+    background-position: -132px -88px;
+}
+
+.edibox .icont.ktbg {
+    background-position: -188px -88px;
+}
+
+.edibox .icont.jxyp {
+    background-position: -245px -88px;
+}
+
+.edibox .icont.jxfx {
+    background-position: -302px -88px;
+}
+
+.edibox .ico-jing {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    background: url(../images/ktjx/ico.png) -334px -232px;
+    width: 25px;
+    height: 30px;
+}
+
+.ico-jj {
+    display: block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    background-position: -25px -270px;
+    width: 25px;
+    height: 25px;
+}
+
+.ico-jj.aa {
+    background-position: -56px -270px;
+}
+
+.ico-up {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 30px;
+    height: 26px;
+    background-position: -256px -237px;
+}
+
+.ico-down {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 30px;
+    height: 26px;
+    background-position: -294px -237px;
+}
+
+.edibox i.ico-more {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/ktjx/ico.png);
+    width: 85px;
+    height: 85px;
+    background-position: -275px -2px;
+}
+
+/*button*/
+.edibox button.yuan {
+    width: 30px;
+    height: 30px;
+    background: url(../images/ktjx/ico.png);
+}
+
+.edibox button.yuan.left {
+    background-position: -23px -231px;
+}
+
+.edibox button.yuan.right {
+    background-position: -65px -231px;
+}
+
+.edibox button.yuan.left.cur {
+    background-position: -104px -231px;
+}
+
+.edibox button.yuan.right.cur {
+    background-position: -146px -231px;
+}
+
+.edibox button.yuan02 {
+    width: 20px;
+    height: 20px;
+    background: url(../images/ktjx/ico.png);
+    background-position: -193px -237px;
+}
+
+.edibox button.yuan02.cur {
+    background-position: -222px -237px;
+}
+
+/*footer*/
+.edibox .foot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8;
+    height: 65px;
+    background: url(../images/ktjx/btbg.png);
+    background-repeat: repeat;
+}
+
+.edibox .footer {
+    position: relative;
+    padding: 0 25px;
+    border-top: solid 1px #a1cfe5
+}
+
+/*.edibox .footer:before {position: absolute; top: 0; left: 0; right: 0; content: ""; height: 1px; background: #fff;transform-origin: 0 0;
+transform: scaleY(0.5);}*/
+.edibox .footer > div {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 65px;
+}
+
+.edibox .footer div > a {
+    color: #fff;
+    font-size: 1.4em;
+    vertical-align: middle;
+    padding: 10px 0;
+    display: block;
+    width: 140px;
+    text-align: center;
+}
+
+.edibox .footer div > a.cur {
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.edibox .footer div > a.cur:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: #269bd7;
+    left: 0;
+    bottom: 0;
+}
+
+.edibox .footer div > a > i {
+    margin-right: 5px;
+}
+
+/*index*/
+.edibox {
+    background: url(../images/ktjx/bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    background-size: 100% 100%;
+}
+
+.edibox .head {
+    color: #fff;
+}
+
+.edibox .head > * {
+    padding: 10px 5px;
+}
+
+.edibox .top-left {
+    width: 280px;
+}
+
+.edibox .top-middle {
+    color: #dcdcdc;
+}
+
+.edibox .address {
+    color: #666;
+    background: url(../images/ktjx/dre-bg.jpg) repeat-x;
+    padding: 10px;
+}
+
+.edibox .address h3 {
+    color: #cccccc;
+}
+
+.edibox .address h3 span {
+    color: #fff;
+}
+
+.edibox .middle-box {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    bottom: 80px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.edibox .fen-list li .pad5 > a {
+    background: #fff;
+    display: block;
+    position: relative;
+}
+
+.edibox .fen-list li .pad5 > a > label {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.edibox .icontup {
+    display: block;
+    width: 60px;
+    padding: 10px 10px 0;
+    float: right;
+}
+
+.edibox .icontup02 {
+    position: relative;
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.edibox .icontup img, .edibox .icontup02 img {
+    width: 100%;
+    height: auto;
+}
+
+.edibox .icontup02 em {
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    font-style: normal;
+}
+
+.edibox .icontup > b {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 25px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.edibox .fen-list p {
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.edibox .fen-list p > i {
+    margin: 0 3px;
+}
+
+.edibox .pos-list {
+    position: absolute;
+    bottom: 65px;
+    z-index: 9;
+    border: solid 1px #ccc;
+    left: 0px;
+    background: #fff;
+    width: 180px;
+    box-shadow: 1px 1px 10px #333;
+}
+
+.edibox .pos-list li {
+    border-bottom: solid 1px #ccc;
+    padding: 5px 10px;
+}
+
+.edibox .pos-list a {
+    font-size: 1.4em;
+}
+
+.edibox .pos-list .more-click a {
+    font-size: 1em;
+}
+
+.edibox .pos-list-more {
+    position: absolute;
+    bottom: 65px;
+    z-index: 9;
+    left: 180px;
+    border: solid 1px #ccc;
+    background: #fff;
+    width: 130px;
+    box-shadow: 1px 1px 10px #333;
+}
+
+.edibox .pos-list-more li {
+    border-bottom: solid 1px #ccc;
+    padding: 5px 10px;
+}
+
+.edibox .pos-list-more a {
+    font-size: 1em;
+}
+
+.edibox .pos-list02 {
+    position: absolute;
+    padding: 0;
+    background: #fff;
+    border: solid 1px #ccc;
+    bottom: 65px;
+    z-index: 9;
+    line-height: 20px;
+    left: 0px;
+    width: 320px;
+    box-shadow: 1px 1px 10px #333;
+    padding: 0;
+}
+
+.edibox .pos-list02 li {
+    padding: 10px 15px;
+    background: #fff;
+}
+
+.edibox .pos-list02 h3 {
+    background: #269bd7;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    margin: 0;
+    height: 25px;
+}
+
+.edibox .pos-list02 h5 {
+    font-size: 17px
+}
+
+.edibox .pos-list02 h6 {
+    color: #999;
+    text-indent: 5px;
+}
+
+.edibox .pos-list02 h6.cur, .edibox .pos-list02 h5.cur {
+    color: #159edc;
+}
+
+.edibox .pos-list02 h3, .edibox .pos-list02 h4, .edibox .pos-list02 h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edibox .pos-lr {
+    display: block;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+    background: #fff;
+}
+
+.edibox .pos-lr button {
+    margin: 0 10px;
+}
+
+.edibox .fen-list li button.yuan02 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.edibox .bbut {
+    position: absolute;
+    background: #333;
+    filter: alpha(opacity=90);
+    opacity: 0.9;
+    z-index: 6;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    display: none;
+}
+
+.edibox .bbut button {
+    background: none;
+    width: 25%;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 30px;
+    float: left;
+}
+
+
+/**/
+.containers {
+    background: none !important;
+}
+
+.edibox .header {
+    height: auto !important;
+}
+
+.edibox .footer {
+    background: none !important;
+}
+
+.edibox .nav {
+    background: none !important;
+}
+
+.edibox .main {
+    box-shadow: none !important;
+}
+
+.more-xxk {
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+    background: #585858;
+    z-index: 9;
+    width: 320px;
+    font-size: 0.8rem;
+}
+
+.more-xxk li {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+    background: #fff;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.more-xxk li.cur {
+    background: #acacac;
+    color: #fff;
+}
+
+.org-ss {
+    display: inline-block;
+    width: 230px;
+    background: #3eb5f2;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-bottom: 5px \9;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.zd-more {
+    float: right;
+    padding: 0 0 0 5px;
+}
+
+.opacity {
+    filter: alpha(opacity=10);
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+    opacity: 0.1;
+}
+
+.pphs {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.tabmiddle {
+    position: relative;
+    min-height: 75px;
+    padding: 5px;
+}
+
+.tabright {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    left: 0;
+}
+
+.tabbttom {
+    border-top: solid 1px #efefef;
+    position: relative;
+    height: 32px;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+.tabbttom > span {
+    color: #888;
+    padding: 5px;
+    font-size: 0.8rem;
+    float: left;
+}
+
+.tabbttom > span i {
+    margin-right: 5px;
+}
+
+.tabright > h3 {
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+    color: #057bb8;
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
+    word-break: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.tabbttom .ico-jj {
+    position: absolute;
+    right: 10px;
+    z-index: 11;
+    top: 3px;
+}
+
+.edibox .limore a {
+    display: block;
+    background: #f4f4f4;
+    line-height: 117px;
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+}
+
+.edibox .limore a i {
+    margin-right: 10px;
+}
+
+.tongzhi {
+    line-height: 65px;
+    display: block;
+    height: 65px;
+    position: absolute;
+    text-decoration: underline;
+    left: 310px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tongzhi img {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.img100 {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.edibox .top-left {
+    height: 75px;
+}
+
+.znzj {
+    vertical-align: middle;
+    margin: -4px 5px 0 0;
+}
+
+.tishi-bg {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: url(../img/bg.png) repeat;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<version>
+    <versionTitle>优教通备课</versionTitle>
+    <versionNum>V5.1.7</versionNum>
+    <versionDate>2019.06.27</versionDate>
+    <versions>
+        <!-- 1-允许访问备课、0-不允许访问备课' -->
+        <allowLoginBeikeFlag>1</allowLoginBeikeFlag>
+        <!-- V3.0.03-S1_v1功能-->
+        <versionContent>1） 支持密码级别控制。</versionContent>
+    </versions>
+</version>

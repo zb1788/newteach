@@ -1,0 +1,151 @@
+/* 优教班班通-登录 2015.06.24 by zdh */
+
+*{ margin:0; padding:0; border:0;}
+body {font-size:18px; font-family:"Microsoft Yahei"; background-color:#ccc; background-image:url(../images/lineBg.png); background-position:15px 15px;}
+a{ text-decoration:none;}
+
+.picBox{ position:relative; height:380px;}
+.picBox img.logo{ position:absolute; left:50px; top:20px;}
+.picBox img.bg{ position:absolute; left:0; top:0; z-index:-1; width:100%; height:380px;}
+.picBox img.pic{ position:absolute; left:50%; margin-left:-512px; top:0;}
+.shadow{ height:18px; background:url(../images/shadow.png) repeat-x; }
+
+.loginBox{ width:800px; margin:0 auto;}
+.formCon span{ display:inline-block;  height:40px; line-height:40px; margin-right:5px; vertical-align:middle;}
+.formCon span input{ width:240px;  height:38px; line-height:38px; margin:0 10px; background:none;font-family:Microsoft Yahei; font-size:21px;vertical-align:middle;}
+.formCon span.id{width:257px; background:url(../images/spirit.png) 0 0 no-repeat;}
+.formCon span.pw{width:257px; background:url(../images/spirit.png) 0 -40px no-repeat;}
+.formCon span.sm a{ display:block; width:100px; height:40px; line-height:40px; text-align:center; background:url(../images/spirit.png) 0 -80px no-repeat;color:#fff;}
+.formCon span.sel input{ width:30px; height:30px;}
+
+.keyboard{background:url(../images/spirit.png) 0 -120px no-repeat; width:455px; height:45px; margin-top:10px;}
+.keyboard a{ font-size:24px; font-weight:bold; display:inline-block; width:35px; height:35px; line-height:35px; color:#555;background:url(../images/spirit.png) -455px -95px no-repeat; margin:5px 0 0 5px; text-align:center;}
+.keyboard a.bs{width:45px;  background:url(../images/spirit.png) -490px -95px no-repeat;}
+.keyboard a:hover{background:url(../images/spirit.png) -455px -130px no-repeat; color:#fff;}
+.keyboard a.bs:hover{ background:url(../images/spirit.png) -490px -130px no-repeat;}
+
+.user{ margin:10px; text-align:center;}
+.user a{ display:inline-block; width:88px; height:40px; line-height:40px; color:#fff; text-align:center; margin:5px 3px;background:url(../images/spirit.png) -100px -80px no-repeat;}
+
+.tools{ height:90px; text-align:center; background:rgba(255,255,255,0.3); filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#55ffffff', EndColorStr='#aaffffff');}
+.tools a{ display:inline-block; font-size:14px; color:#555; margin:10px 10px 0; width:72px;}
+.tools a span{ display:block; margin:0 auto; width:52px; height:52px; background:url(../images/spirit.png) no-repeat; cursor:pointer;}
+.tools a span.t1{ background-position:0 -165px;}
+.tools a span.t2{ background-position:-52px -165px;}
+.tools a span.t3{ background-position:-104px -165px;}
+.tools a span.t4{ background-position:-156px -165px;}
+.tools a span.t5{ background-position:-208px -165px;}
+.tools a span.t6{ background-position:-260px -165px;}
+.tools a span.t7{ background-position:-312px -165px;}
+.tools a span.t8{ background-position:-364px -165px;}
+.tools a span.t9{ background-position:-416px -165px;}
+.tools a span.t10{ background-position:-468px -165px;}
+
+
+.copyright{ text-align:center; margin:15px 0;}
+
+
+/*-----2016-1-14----*/
+
+.beij{ background:#000;
+       position:fixed; 
+      _position:absolute; top:0; left:0;
+	  width:100%;
+	  height:100%;
+	  z-index:700;
+	  opacity:0.35; 
+      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+	  filter:alpha(opacity=35);}
+.k_da{ display:none; height:auto; z-index:100000; margin-bottom:15px;}
+
+.tan{ position:fixed; width:720px; height:408px; border:1px solid #555; left:50%; 
+         margin-left:-330px; bottom:40%;background:url(../images/gg.jpg) no-repeat center center; top:25%;
+		  /*-moz-box-shadow:0 0 10px rgba(0,0,0,.4);-webkit-box-shadow:0 0 10px rgba(0,0,0,.4);-box-shadow:0 0 10px rgba(0,0,0,.4);*/}
+.tan p{ position:absolute; text-align:center; font:normal 20px/35px "微软雅黑"; top:90px; border:0px solid #ccc;
+        width:410px; left:160px; height:200px; display:block; overflow:hidden;}
+
+input.but{ border:none; width:150px; height:35px; font:normal 16px/35px "微软雅黑"; color:#fff; 
+           background:#0096d6;
+           border-radius:3px; text-align:center; outline:0; cursor:pointer;}
+.b{ display:block; margin-top:160px; text-align:center; position:absolute; bottom:40px; left:200px;}
+
+.timu
+{
+    /*background: #8C8C8C;*/
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 15px;
+}
+.del
+{
+    display: block;
+    float: right;
+    font-style: normal;
+    color: #888;
+    font-size: 28px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+.del:hover
+{
+    color: #333;
+}
+.wei
+{
+    padding: 0px 0px;
+}
+.wei-one
+{
+    padding: 0px 25px;
+
+}
+.wei-img
+{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+.wei-h4
+{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px auto;
+}
+.wei-h5
+{
+    text-align: center;
+    font-size: 13px;
+    margin: 10px auto;
+    cursor:hand;
+    color: #129ae8;
+}
+.wei-h5:hover
+{
+    color: #1E90FF;
+}
+.wei-a
+{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #129ae8;
+    margin-right: 10px;
+}
+.wei-a:hover
+{
+    color: #1E90FF;
+}
+.wei-p
+{
+    font: normal 17px/25px "Microsoft YaHei";
+    margin: auto;
+    color: #333;
+}
+
+.msg-err{width:150px;height:150px;background:rgb(255,255,255);background:rgba(255,255,255,.90);position:absolute;left:0px;top:3px;z-index:9999}
+.msg-err h6{color:#3c3c3c;margin-top:50px;margin-bottom:8px;text-align:center;font-size: 18px;}
+.msg-err .refresh{width:120px;height:30px;line-height:30px; text-decoration:none; text-align:center;margin:0 auto;background:#f40;display:block;color:#fff;border-radius:3px}
+.msg-err .refresh:hover{background:#f52b00}

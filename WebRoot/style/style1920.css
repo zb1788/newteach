@@ -1,0 +1,44 @@
+@import url("style_v4.css");
+
+/*�ض��岿��*/
+.main, .mainLeft, .mainRight {
+    height: 508px;
+}
+
+.closePC {
+    top: 1004px;
+    LEFT: 1872px
+}
+
+.login {
+    MARGIN: 520px 20px 10px;
+}
+
+.bottomlogo2 {
+    top: 960px;
+    left: 740px;
+}
+
+UL#keyboard {
+    left: 592px;
+}
+
+#versionshow {
+    POSITION: absolute;
+    FONT-SIZE: 13px;
+    TOP: 10px;
+    RIGHT: 225px
+}
+
+/*��¼ҳ��*/
+.setBg {
+    background: url(../images/1920/loginBg.jpg) center top no-repeat;
+    width: 1920px;
+    height: 1050px;
+}
+
+/*��½Bg*/
+.banner {
+    margin-left: 455px;
+    margin-top: 153px;
+}
